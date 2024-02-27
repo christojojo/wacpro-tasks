@@ -1,0 +1,77 @@
+.btn-primary {
+    @apply font-medium
+        flex
+        items-center
+        space-x-2
+        text-white
+        bg-primary
+        hover:bg-primary-hover
+        rounded-sm
+        transition-all;
+    &.xs {
+      @apply border-0 h-5 w-5;
+    }
+    &.sm {
+      @apply px-md
+            py-sm h-9;
+    }
+    &.md {
+      @apply px-md
+            py-sm h-10;
+    }
+    // &.lg {
+    //   @apply px-lg
+    //         py-md;
+    // }
+  }
+  .btn-secondary{
+    @apply font-medium
+           flex
+           items-center
+           space-x-2
+           text-black
+           bg-secondary
+           hover:bg-secondary-hover
+           rounded-sm
+           transition-all;
+           &.xs {
+            @apply border-0 h-5 w-5;
+          }
+          &.sm {
+            @apply px-md
+                  py-sm h-9;
+          }
+          &.md {
+            @apply px-md
+                  py-sm h-10;
+          }
+  }
+  
+  .btn-default {
+    @apply font-medium
+        flex
+        items-center
+        space-x-2
+        text-black
+        bg-white
+        hover:bg-hover
+        border
+        border-button
+        rounded-sm
+        transition-all;
+    &.xs {
+      @apply h-5 w-5 border-0;
+    }
+    &.sm {
+      @apply px-md
+            py-sm h-9;
+    }
+    &.md {
+      @apply px-md
+            py-sm h-10;
+    }
+    // &.lg {
+    //   @apply px-lg
+    //         py-md;
+    // }
+  }

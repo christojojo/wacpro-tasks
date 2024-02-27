@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$base-size: 16;
+
+@function size($target, $context: $base-size) {
+  @return calc($target / $context) * 1rem;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.btn-link {
+  @apply font-medium
+    flex
+    items-center
+    space-x-2.5
+    transition-all;
+}
+
+.search-right {
+  @apply absolute right-sm top-1/2 transform -translate-y-1/2;
+}
+.search-left {
+  @apply absolute left-sm top-1/2 transform -translate-y-1/2;
+}
+
+:root {
+  //  --primary-color: green;
+  //  --secondary-color: blue; 
+  /* padding 
+    */
+  --m-space-xs: #{size(10)};
+  --m-space-sm: #{size(12)};
+  --m-space-md: #{size(14)};
+  --space-xs: #{size(4)};
+  --space-sm: #{size(8)};
+  --space-md: #{size(16)};
+  --space-lg: #{size(24)};
+  /* border width 
+    */
+  --border-md: 3px;
+  /* border radius 
+    */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-cap: 32px;
+  --m-font-xs: #{size(10)};
+  --m-font-lg: #{size(20)};
+  --font-sm: #{size(12)};
+  --font-sm-1: #{size(13)};
+  --font-md: #{size(14)};
+  --font-lg: #{size(18)};
+  --font-xl: #{size(30)};
+  /* colors */
+  --zenbor-parent: #d1d7db;
+  --zenbor-child: #e2e6e9;
+  --zenbor-main: #d9dcde;
+  --bg-white: #ffffff;
+  --bg-gray: #f6f7f8;
+  --bg-grey: #f1f2f4;
+  --layout-grey: #edeff2;
+  --border-grey: #ececec;
+  --border-black: #000000;
+  --border-button: #d0d5dd;
+  --border-input: #d0d5dd;
+  --text-black: #111111;
+  --text-grey: #767676;
+  --m-text-grey: #5e6263;
+  --white: #ffffff;
+  --label-color: #344054;
+  --placeholder-color: #c1c1c1;
+  --primary-color: #0C66E4;
+  --primary-hover-color: #0B3DAB;
+  --secondary-color: #FFFFFF;
+  --secondary-hover-color: #E5E9EE;
+  --hover-grey: #ebecef;
+  --table-click: #09296d;
+  --badge-critical: #ae1800;
+  --badge-critical-bg: #fdd4cd;
+  --badge-complete: #24663b;
+  --badge-complete-bg:  #c3e6cd;
+  --badge-warning: #8f4700;
+  --badge-warning-bg: #f5d9a8;
+  --badge-cancelled: #535158;
+  --badge-cancelled-bg: #bfbfc3;
+  --badge-pending: #626168;
+  --badge-pending-bg: #bfbfc3;
+  --badge-active: #FFFFFF;
+  --badge-active-bg: #267b43;
+
+  --badge-secondary: #E6E6E6;
+  --badge-secondary-color: #BFBFC3;
+
+
+  /* // --default-border : #ECECEC; */
+}

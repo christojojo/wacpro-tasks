@@ -1,0 +1,29 @@
+.default{
+    @apply 
+           text-pending           
+}
+.pending{
+    @apply 
+           bg-pending
+           text-pending
+}
+.warning{
+    @apply 
+           bg-warning
+           text-warning
+}
+.complete{
+    @apply 
+           bg-complete
+           text-complete
+}
+.critical{
+    @apply 
+           bg-critical
+           text-critical
+}
+.cancelled{
+    @apply 
+           bg-cancelled
+           text-cancelled
+}

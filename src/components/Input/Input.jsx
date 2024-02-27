@@ -19,7 +19,7 @@ function Input({ label, icon, iconR, placeholder, type }) {
         <input
           type={type}
           placeholder={placeholder}
-          className={`w-96 font-medium text-[14px] leading-4 border pl-${icon ? "8" : "4" }   py-[11px] pr-8 rounded border-input focus:outline-none`}
+          className={`w-96 font-medium text-[14px] leading-4 border  pl-${icon?'8':'4'}  py-[11px] pr-8 rounded border-input focus:outline-none`}
         /> 
         {iconR && (
           <span className='absolute -translate-y-1/2 top-1/2 right-[10px]'>

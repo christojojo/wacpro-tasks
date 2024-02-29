@@ -8,7 +8,7 @@ function InputPage() {
     const [isPassword, setPassword] = useState(true)
 
   return (
-    <div>
+    <div className='element-wrap'>
       <div className='max-w-lg mx-auto'>
     <div className='flex flex-col items-center justify-center font-semibold  pt-4 space-y-2'>
       <h1 className='font-semibold text-2xl my-4'>Input</h1>

@@ -31,7 +31,18 @@ input[type="search"]::-webkit-search-cancel-button {
 .search-left {
   @apply absolute left-sm top-1/2 transform -translate-y-1/2;
 }
-
+.element-wrap{
+  background: hsla(0, 0%, 100%, .08);
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.05);
+  @apply h-max
+         mt-[40px]
+         p-[35px]
+         rounded-[5px]
+}
+.active{
+  @apply text-primary
+  text-[15px]
+}
 :root {
   //  --primary-color: green;
   //  --secondary-color: blue; 

@@ -16,10 +16,10 @@ function Navbar() {
             <Link to="/badge">Badge</Link>
           </li>
           <li>
-            <Link to="/404">404</Link>
+          <Link to="/input">Input</Link>
           </li>
           <li>
-            <Link to="/input">Input</Link>
+          <Link to="/404">404</Link>
           </li>
         </ul>
       </nav>

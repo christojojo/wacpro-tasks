@@ -60,6 +60,7 @@ const borderColor = {
   parent: "var(--zenbor-parent)",
 };
 
+
 const clipPath = {
   progressbar: "polygon(75% 0%, 100% 50%, 75% 100%, 65% 100%, 90% 52%, 65% 0);",
 };
@@ -126,7 +127,9 @@ module.exports = {
       backgroundColor,
       borderColor,
       backgroundImage: {
-        checklg: "url('/assets/check-big.svg')",
+        checkMark: "url('./assets/checkmark.svg')",
+        'toggle-sm' : "url('/toggle-sm.svg')",
+        'toggle-lg' : "url('/toggle-lg.svg')",
         lostbg: "url('/assets/lossbg.png')",
         profitbg: "url('/assets/profitbg.png')",
         underconstruction: "url('/assets/constructionbg.png')",

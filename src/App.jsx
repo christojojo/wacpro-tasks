@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import Navbar from './components/navbar/Navbar';
 import AsideRoute from './components/AsideRoute/AsideRoute';
 import ClickMe from './pages/ClickMe';
+import CheckboxPage from './pages/CheckBoxPage';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Route path='/button' element={<ButtonPage/>}/>
       <Route path='/input' element={<InputPage/>}/>
       <Route path='/badge' element={<BadgePage/>}/>
+      <Route path='/checkbox' element={<CheckboxPage/>}/>
       <Route path='*' element={<NoPage/>}/>
       <Route path='/clickme' element={<ClickMe/>}/>
     </Routes>

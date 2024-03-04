@@ -22,15 +22,15 @@ function InputPage() {
           <Button onClick={()=>{
             setPassword(state => !state )
           }}>
-            {isPassword ? <img src='../src/assets/eye-icon.svg'/> : <img src='../src/assets/badge-icon.svg'/> }
+            {isPassword ? 'visibility' : 'visibility_off' }
           </Button>
         }
         ></Input>
         <Input type={'text'} label={'Full Name'} placeholder={'Full Name'} ></Input>
         <Input type={'number'} label={'Mobile Number'} placeholder={'Mobile Number'} ></Input>
-        <Input type={'text'} iconR={<img src='../src/assets/search-icon.svg'/>}></Input>
-        <Input type={'text'} placeholder={'search this table'} iconR={<img src='../src/assets/search-icon.svg'/>}></Input>
-        <Input type={'search'} icon={<img src='../src/assets/search-icon.svg'/>} placeholder={'search'}/>
+        <Input type={'text'} iconR='search'></Input>
+        <Input type={'text'} placeholder={'search this table'} iconR='search'></Input>
+        <Input type={'search'} icon='search' placeholder={'search'}/>
       </div>
       <div>
       </div>

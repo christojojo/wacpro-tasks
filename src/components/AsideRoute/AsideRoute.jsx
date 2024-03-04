@@ -25,10 +25,12 @@ const isActive = (path) => {
                     <li className={isActive('/input') ? 'active' : ''}>
                         <Link to='/input'>Input</Link>
                     </li>
+                    <li className={isActive('/checkbox') ? "text-primary" : ''}>
+                        <Link to='/checkbox'>checkbox</Link>
+                    </li>
                     <li className={isActive('/404') ? "text-primary" : ''}>
                         <Link to='/404'>Error</Link>
-                    </li>
-                   
+                    </li>                   
                 </ul>
             </aside>
             <script>

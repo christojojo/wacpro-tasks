@@ -31,9 +31,7 @@ function CheckboxPage() {
     <CheckboxDemo  id={'age'} variant={'checkbox-sm'}/>
     </div>
     </div>
-
-    
-    </div>
+  </div>
   )
 }
 

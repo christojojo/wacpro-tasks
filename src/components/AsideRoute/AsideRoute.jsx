@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom'
 function AsideRoute({}) {
 
 const location = useLocation()
-console.log(location.pathname);
+// console.log(location.pathname);
 
 const isActive = (path) => {
    return location.pathname === path; 
@@ -30,7 +30,13 @@ const isActive = (path) => {
                     </li>
                     <li className={isActive('/404') ? "text-primary" : ''}>
                         <Link to='/404'>Error</Link>
-                    </li>                   
+                    </li>  
+                    <li className={isActive('/table') ? "text-primary" : ''}>
+                        <Link to='/table'>Table</Link>
+                    </li>   
+                    <li className={isActive('/todo') ? "text-primary" : ''}>
+                        <Link to='/todo'>TodoList</Link>
+                    </li>               
                 </ul>
             </aside>
             <script>

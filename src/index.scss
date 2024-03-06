@@ -41,6 +41,21 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 
+table,th,td{
+  border: 1px solid #ECECEC;
+}
+th{
+  font-weight: 500;
+  font-size: 13px;
+  color: #797985;
+}
+th,td{
+  padding: 6.5px 16px;
+}
+td a{
+  color: #0C66E4;
+}
+
 :root {
   //  --primary-color: green;
   //  --secondary-color: blue; 

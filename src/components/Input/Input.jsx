@@ -12,8 +12,9 @@ function Input({ label, icon, iconR, placeholder, type,props }) {
         )}
         <input
           type={type}
-          placeholder={placeholder}
-          className={`w-[300px] font-medium text-[14px] leading-4 border  ${icon?'pl-[34px]':'pl-4'} ${iconR?'pr-[34px]':'pr-4'}  py-[11px]  rounded border-input focus:outline-none focus:ring-1 focus:border-transparent`}
+          placeholder={placeholder}         
+          className={`w-[401px] font-medium text-[14px] leading-4 border  ${icon?'pl-[34px]':'pl-4'} ${iconR?'pr-[34px]':'pr-4'} 
+           py-[11px]  rounded border-input focus:outline-none focus:border-primary placeholder:medium placeholder:text-[14px] `}
           {...props}
         /> 
         {iconR && (

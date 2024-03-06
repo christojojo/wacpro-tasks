@@ -33,6 +33,7 @@ const textColor = {
   placeholder: "var(--placeholder-color)",
   "table-click": "var(--table-click)",
   tableheaditem: "var(--table-head-item)",
+  
 };
 
 const backgroundColor = {

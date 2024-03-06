@@ -5,11 +5,21 @@ function ReactTodo() {
 const [todo,setTodo]=useState('');   // to store input data
 const [todos,setTodos]=useState([]); // to store the list todos
 
-const addTodo = () => {
-    if(todo !== ""){
-        setTodos([...todos,todo])
-        setTodo("")
-    }
+// const addTodo = () => {
+//     if(todo !== ""){
+//         setTodos([...todos,todo])
+//         setTodo("")
+//     }
+// }
+
+// const deleteTodo = (index) => {
+//     const updatedTodos = [...todos];
+//     updatedTodos.splice(index, 1);
+//     setTodos(updatedTodos);
+//   };
+
+const addTodo=()=>{
+     
 }
 
 console.log(todos);
@@ -27,7 +37,7 @@ console.log(todos);
         <ul className="text-left list-decimal mx-5">
  
           {todos?.map((item,i) => (<div className="flex justify-between items-center py-1 border-b-2">
-            <li className="mb-1" key={i}>{item}</li> <button  className="bg-red-500 text-white px-2  rounded flex justify-center items-baseline">x</button></div>))}
+            <li className="mb-1" key={i}>{item}</li> <button onClick={()=> {deleteTodo(i)}} className="bg-red-500 text-white px-2  rounded flex justify-center items-baseline">x</button></div>))}
         </ul>
     </div>
     

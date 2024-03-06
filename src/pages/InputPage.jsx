@@ -13,11 +13,11 @@ function InputPage() {
     <div className='flex flex-col items-center justify-center font-semibold  pt-4 space-y-2'>
       <h1 className='font-semibold text-2xl my-4'>Input</h1>
       <div>
-        <Input type={'email'} label={'Email Address'} placeholder={'Email Address'} ></Input>        
+        <Input type={'email'} label={'Email Address'} ></Input>        
         <Input 
         type={isPassword ? 'password' : 'text'}
         label={'Password'} 
-        placeholder={'Password'} 
+        
         iconR={
           <Button onClick={()=>{
             setPassword(state => !state )
@@ -26,11 +26,10 @@ function InputPage() {
           </Button>
         }
         ></Input>
-        <Input type={'text'} label={'Full Name'} placeholder={'Full Name'} ></Input>
-        <Input type={'number'} label={'Mobile Number'} placeholder={'Mobile Number'} ></Input>
-        <Input type={'text'} iconR='search'></Input>
-        <Input type={'text'} placeholder={'search this table'} iconR='search'></Input>
-        <Input type={'search'} icon='search' placeholder={'search'}/>
+        <Input type={'text'} label={'Full Name'}  ></Input>
+        <Input type={'number'} label={'Mobile Number'}  ></Input>
+        <Input type={'text'}   iconR='search'></Input>
+        <Input type={'search'} icon='search' placeholder={'search this table'}/>
       </div>
       <div>
       </div>

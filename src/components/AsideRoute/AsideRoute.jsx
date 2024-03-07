@@ -40,6 +40,9 @@ const isActive = (path) => {
                     <li className={isActive('/radio') ? "text-primary" : ''}>
                         <Link to='/radio'>Radio Button</Link>
                     </li> 
+                    <li className={isActive('/clickme') ? "text-primary" : '' }>
+                        <Link to='/clickme'>Click Me</Link>
+                    </li> 
                                
                 </ul>
             </aside>

@@ -12,6 +12,7 @@ import ClickMe from './pages/ClickMe';
 import CheckboxPage from './pages/CheckBoxPage';
 import Table from './pages/Table'
 import ReactTodo from './pages/ReactTodo';
+import RadioButtonPage from './pages/RadioButtonPage';
 
 function App() {
 
@@ -25,10 +26,11 @@ function App() {
       <Route path='/input'    element={<InputPage/>}    />
       <Route path='/badge'    element={<BadgePage/>}    />
       <Route path='/checkbox' element={<CheckboxPage/>} />
-      <Route path='*'         element={<NoPage/>}       />
       <Route path='/clickme'  element={<ClickMe/>}      />
       <Route path='/table'    element={<Table/>}/>
-      <Route path='/todo'    element={<ReactTodo/>} />
+      <Route path='/todo'     element={<ReactTodo/>} />
+      <Route path='/radio'    element={<RadioButtonPage/>}/>
+      <Route path='*'         element={<NoPage/>}       />
 
     </Routes>
     </div>

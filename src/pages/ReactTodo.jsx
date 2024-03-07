@@ -19,8 +19,6 @@ updatedTodos.splice(index,1);
 setTodos(updatedTodos);
 }
 
-console.log(todos);
-
   return (
     <div className='mt-20 w-[325px]'>
     <h1 className='font-bold text-2xl mb-3'>TodoList</h1>

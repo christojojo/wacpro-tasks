@@ -30,8 +30,10 @@ function InputPage() {
         <Input type={'number'} label={'Mobile Number'}  ></Input>
         <Input type={'text'}   iconR='search'></Input>
         <Input type={'search'} icon='search' placeholder={'search this table'}/>
+        <Input type={'search'} icon={'search'} placeholder={'search the table'} classNames={'hover:placeholder:text-black'} darkplaceholder='true'></Input>
       </div>
       <div>
+        
       </div>
     </div>
     </div>

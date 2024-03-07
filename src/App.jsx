@@ -27,8 +27,8 @@ function App() {
       <Route path='/badge'    element={<BadgePage/>}    />
       <Route path='/checkbox' element={<CheckboxPage/>} />
       <Route path='/clickme'  element={<ClickMe/>}      />
-      <Route path='/table'    element={<Table/>}/>
-      <Route path='/todo'     element={<ReactTodo/>} />
+      <Route path='/table'    element={<Table/>}        />
+      <Route path='/todo'     element={<ReactTodo/>}    />
       <Route path='/radio'    element={<RadioButtonPage/>}/>
       <Route path='*'         element={<NoPage/>}       />
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Input.scss';
 
-function Input({ label, icon, iconR, placeholder, type,props }) {
+function Input({ label, icon, iconR, placeholder, classNames, type,darkplaceholder,...props }) {
   
   return (
     <div className='flex flex-col space-y-1 mb-3.5'>
@@ -14,7 +14,9 @@ function Input({ label, icon, iconR, placeholder, type,props }) {
           type={type}
           placeholder={placeholder}         
           className={`w-[401px] font-medium text-[14px] leading-4 border  ${icon?'pl-[34px]':'pl-4'} ${iconR?'pr-[34px]':'pr-4'} 
-           py-[11px]  rounded border-input focus:outline-none focus:border-primary placeholder:medium placeholder:text-[14px] `}
+           py-[11px]  rounded border-input focus:outline-none focus:border-primary placeholder:medium placeholder:text-[14px] 
+            ${classNames}  ${darkplaceholder ? "placeholder:text-placeholder-color" : "placeholder:text-placeholder-color"} `}
+
           {...props}
         /> 
         {iconR && (

@@ -22,7 +22,7 @@ const isActive = (path) => {
                     <li className={isActive('/badge') ? 'text-primary' : '' }>
                         <Link to='/badge'>Badge</Link>
                     </li>
-                    <li className={isActive('/input') ? 'active' : ''}>
+                    <li className={isActive('/input') ? 'text-primary' : ''}>
                         <Link to='/input'>Input</Link>
                     </li>
                     <li className={isActive('/checkbox') ? "text-primary" : ''}>
@@ -31,9 +31,9 @@ const isActive = (path) => {
                     <li className={isActive('/404') ? "text-primary" : ''}>
                         <Link to='/404'>Error</Link>
                     </li>  
-                    <li className={isActive('/table') ? "text-primary" : ''}>
+                    {/* <li className={isActive('/table') ? "text-primary" : ''}>
                         <Link to='/table'>Table</Link>
-                    </li>   
+                    </li>    */}
                     <li className={isActive('/todo') ? "text-primary" : ''}>
                         <Link to='/todo'>TodoList</Link>
                     </li>   

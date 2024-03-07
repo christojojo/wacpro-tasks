@@ -85,7 +85,7 @@ function Table({isCheck=true}) {
 
                 {TableData.titles.map((item, index)=>{
                   return(
-                    <th>{item.title}</th>
+                    <th key={index}>{item.title}</th>
                   )
                 })}
 
@@ -94,11 +94,11 @@ function Table({isCheck=true}) {
 
               {TableData.list.map((item, index)=>{
                   return(
-                    <tr>
+                    <tr key={index}>
                      {isCheck && <td><CheckboxDemo variant={'checkbox-lg'}/></td>}
                       {item.data.map((td,index)=>{
                         return(
-                          <td>{td.text}</td>
+                          <td key={index}>{td.text}</td>
                         )
                       })}
                     </tr>

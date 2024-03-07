@@ -36,7 +36,11 @@ const isActive = (path) => {
                     </li>   
                     <li className={isActive('/todo') ? "text-primary" : ''}>
                         <Link to='/todo'>TodoList</Link>
-                    </li>               
+                    </li>   
+                    <li className={isActive('/radio') ? "text-primary" : ''}>
+                        <Link to='/radio'>Radio Button</Link>
+                    </li> 
+                               
                 </ul>
             </aside>
             <script>

@@ -3,7 +3,7 @@ import RadioButton from '../components/Radio/RadioButton'
 
 function RadioButtonPage() {
   return (
-    <div className='element-wrap'>
+    <div className='element-wrap flex gap-4'>
         <div className='mb-1'>
         <RadioButton label={'small'} labelClass={'text-sm'} Name={'options'} variant={'sm'} id={'small'}/>
         </div>

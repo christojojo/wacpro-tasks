@@ -5,7 +5,7 @@ function ClickMe() {
     <div className='flex justify-center items-center'>
       <div className='flex'>
         <figure>
-            <img src="/public/Macaca_nigra_self-portrait_large.jpg" alt="" height='200' width='100'/>
+            <img src="/public/Macaca_nigra_self-portrait_large.jpg" alt=""/>  
         </figure>
         <h1 className='text-4xl flex justify-center items-center '>Hi Handsome....</h1>
       </div>

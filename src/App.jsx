@@ -13,6 +13,7 @@ import CheckboxPage from './pages/CheckBoxPage';
 import Table from './pages/Table'
 import ReactTodo from './pages/ReactTodo';
 import RadioButtonPage from './pages/RadioButtonPage';
+import Loader from './components/Loader/Loader';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
       <Route path='/table'    element={<Table/>}        />
       <Route path='/todo'     element={<ReactTodo/>}    />
       <Route path='/radio'    element={<RadioButtonPage/>}/>
+      <Route path='/loader'   element={<Loader/>}/>
       <Route path='*'         element={<NoPage/>}       />
 
     </Routes>

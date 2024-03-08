@@ -1,6 +1,6 @@
 import React from "react";
 import "./button.scss";
-// import Spinner from "../Spinner/Spinner";
+import Loader from "../Loader/Loader";
 
 const Button = ({
   variant = `link`,
@@ -10,7 +10,7 @@ const Button = ({
   classNames,
   size = `md`,
   isCenter,
-  loading,
+  loading=false,
   count,  
   ...props
 }) => {
@@ -24,7 +24,7 @@ const Button = ({
     >
       {loading ? (
         <div className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 flex items-center justify-center">
-          {/* <Spinner variant={variant} /> */}
+          <Loader/>
         </div>
       ) : (
         ""

@@ -10,7 +10,7 @@ function NavbarPage(){
         { title: "Overview" },
         { title: "Profiles" },
         { title: "Settings" },
-        { title: "Contacts" },
+        { title: "Contacts" }, 
         { title: "Proposals" },
         { title: "Project" },
         { title: "Billing items" },
@@ -49,7 +49,8 @@ function NavbarPage(){
                 <li key={index}
                     className={`cursor-pointer `}    
                     onClick={(e)=>{handleClick(index,e)}}
-                    ref={rr=>list.current.push(rr)}>
+                    ref={(el)=>list.current.push(el)}
+                    >
                     {item.title}
                 </li>
             )
@@ -61,3 +62,4 @@ function NavbarPage(){
     )
 }
 export default NavbarPage
+

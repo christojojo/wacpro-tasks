@@ -36,8 +36,10 @@ input[type=search]::-webkit-search-cancel-button {
          rounded-[5px];
 }
 
-table, th, td {
-  border: 1px solid #ECECEC;
+table,
+th,
+td {
+  border: 1px solid #ececec;
 }
 
 th {
@@ -46,12 +48,26 @@ th {
   color: #797985;
 }
 
-th, td {
+th,
+td {
   padding: 6.5px 16px;
 }
 
 td a {
-  color: #0C66E4;
+  color: #0c66e4;
+}
+
+.floater {
+  position: absolute;
+  bottom: 0;
+  left: var(--nav-floater-left);
+  width: var(--nav-floater-width);
+  background-color: var(--primary-color);
+  height: 3px;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  line-height: unset !important;
+  padding: 0 !important;
 }
 
 :root {
@@ -97,10 +113,10 @@ td a {
   --white: #ffffff;
   --label-color: #344054;
   --placeholder-color: #c1c1c1;
-  --primary-color: #0C66E4;
-  --primary-hover-color: #0B3DAB;
-  --secondary-color: #FFFFFF;
-  --secondary-hover-color: #E5E9EE;
+  --primary-color: #0c66e4;
+  --primary-hover-color: #0b3dab;
+  --secondary-color: #ffffff;
+  --secondary-hover-color: #e5e9ee;
   --hover-grey: #ebecef;
   --table-click: #09296d;
   --badge-critical: #ae1800;
@@ -113,9 +129,9 @@ td a {
   --badge-cancelled-bg: #bfbfc3;
   --badge-pending: #626168;
   --badge-pending-bg: #bfbfc3;
-  --badge-active: #FFFFFF;
+  --badge-active: #ffffff;
   --badge-active-bg: #267b43;
-  --badge-secondary: #E6E6E6;
-  --badge-secondary-color: #BFBFC3;
+  --badge-secondary: #e6e6e6;
+  --badge-secondary-color: #bfbfc3;
   /* // --default-border : #ECECEC; */
 }

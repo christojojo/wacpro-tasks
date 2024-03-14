@@ -59,6 +59,7 @@ const borderColor = {
   main: "var(--zenbor-main)",
   child: "var(--zenbor-child)",
   parent: "var(--zenbor-parent)",
+  borderGrey: "var(--secondary-hover-color)",
 };
 
 

@@ -6,14 +6,14 @@ import BadgePage from './pages/BadgePage'
 import InputPage from './pages/InputPage'
 import NoPage from './pages/NoPage'
 import HomePage from './pages/HomePage';
-import Navbar from './components/navbar/Navbar';
 import AsideRoute from './components/AsideRoute/AsideRoute';
 import ClickMe from './pages/ClickMe';
 import CheckboxPage from './pages/CheckBoxPage';
 import Table from './pages/Table'
 import ReactTodo from './pages/ReactTodo';
 import RadioButtonPage from './pages/RadioButtonPage';
-import Loader from './components/Loader/Loader';
+import LoaderPage from './pages/LoaderPage';
+import NavbarPage from './pages/NavbarPage';
 
 function App() {
 
@@ -31,9 +31,9 @@ function App() {
       <Route path='/table'    element={<Table/>}        />
       <Route path='/todo'     element={<ReactTodo/>}    />
       <Route path='/radio'    element={<RadioButtonPage/>}/>
-      <Route path='/loader'   element={<Loader/>}/>
+      <Route path='/loader'   element={<LoaderPage/>}/>
+      <Route path='/navbar'   element={<NavbarPage/>}/>
       <Route path='*'         element={<NoPage/>}       />
-
     </Routes>
     </div>
     </BrowserRouter> 

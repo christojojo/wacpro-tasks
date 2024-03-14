@@ -1,0 +1,72 @@
+.btn-primary {
+  @apply font-medium
+        flex
+        items-center
+        space-x-2
+        text-white
+        bg-primary
+        hover:bg-primary-hover
+        rounded-sm
+        transition-all;
+}
+.btn-primary.xs {
+  @apply border-0 h-5 w-5;
+}
+.btn-primary.sm {
+  @apply px-md
+            py-sm h-9;
+}
+.btn-primary.md {
+  @apply px-md
+            py-sm h-10;
+}
+
+.btn-secondary {
+  @apply font-medium
+           flex
+           items-center
+           space-x-2
+           text-black
+           bg-secondary
+           hover:bg-secondary-hover
+           rounded-sm
+           border
+           border-black
+           transition-all;
+}
+.btn-secondary.xs {
+  @apply border-0 h-5 w-5;
+}
+.btn-secondary.sm {
+  @apply px-md
+                  py-sm h-9;
+}
+.btn-secondary.md {
+  @apply px-md
+                  py-sm h-10;
+}
+
+.btn-default {
+  @apply font-medium
+        flex
+        items-center
+        space-x-2
+        text-black
+        bg-white
+        hover:bg-hover
+        border
+        border-button
+        rounded-sm
+        transition-all;
+}
+.btn-default.xs {
+  @apply h-5 w-5 border-0;
+}
+.btn-default.sm {
+  @apply px-md
+            py-sm h-9;
+}
+.btn-default.md {
+  @apply px-md
+            py-sm h-10;
+}

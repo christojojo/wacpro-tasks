@@ -17,10 +17,10 @@ function ButtonPage() {
 
     </div>
     <div className='flex justify-center gap-5'>
-      <Button variant='secondary' classNames={'border border-black'} icon={<img className='h-[18px] w-[18px]' src='../src/assets/icon-dark.svg' />}>Text</Button>
-      <Button variant='secondary' classNames={'border border-black'}>Text</Button>
-      <Button variant='secondary' classNames={'border border-black'}  iconR={<img className='h-[18px] w-[18px]' src='../src/assets/icon-dark.svg' />}>Text</Button>
-      <Button variant='secondary' loading='true' classNames={'border border-black'}  iconR={<img className='h-[18px] w-[18px]' src='../src/assets/icon-dark.svg' />}>Text</Button>
+      <Button variant='secondary'  icon={<img className='h-[18px] w-[18px]' src='../src/assets/icon-dark.svg' />}>Text</Button>
+      <Button variant='secondary' >Text</Button>
+      <Button variant='secondary'  iconR={<img className='h-[18px] w-[18px]' src='../src/assets/icon-dark.svg' />}>Text</Button>
+      <Button variant='secondary' loading='true' iconR={<img className='h-[18px] w-[18px]' src='../src/assets/icon-dark.svg' />}>Text</Button>
 
     </div>
     </div>

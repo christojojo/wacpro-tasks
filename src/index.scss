@@ -31,34 +31,50 @@ input[type="search"]::-webkit-search-cancel-button {
 .search-left {
   @apply absolute left-sm top-1/2 transform -translate-y-1/2;
 }
-.element-wrap{
-  background: hsla(0, 0%, 100%, .08);
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.05);
+.element-wrap {
+  background: hsla(0, 0%, 100%, 0.08);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
   @apply h-max
          mt-[40px]
          p-[35px]
-         rounded-[5px]
+         rounded-[5px];
 }
 
-
-table,th,td{
-  border: 1px solid #ECECEC;
+table,
+th,
+td {
+  border: 1px solid #ececec;
 }
-th{
+th {
   font-weight: 500;
   font-size: 13px;
   color: #797985;
 }
-th,td{
+th,
+td {
   padding: 6.5px 16px;
 }
-td a{
-  color: #0C66E4;
+td a {
+  color: #0c66e4;
+}
+
+
+
+.floater {
+  position: absolute;
+  bottom: 0;
+  left: var(--nav-floater-left);
+  width: var(--nav-floater-width);
+  background-color: var(--primary-color);
+  height: 3px;
+  transition: 0.5s ease all;
+  line-height: unset !important;
+  padding: 0 !important;
 }
 
 :root {
   //  --primary-color: green;
-  //  --secondary-color: blue; 
+  //  --secondary-color: blue;
   /* padding 
     */
   --m-space-xs: #{size(10)};
@@ -101,29 +117,27 @@ td a{
   --white: #ffffff;
   --label-color: #344054;
   --placeholder-color: #c1c1c1;
-  --primary-color: #0C66E4;
-  --primary-hover-color: #0B3DAB;
-  --secondary-color: #FFFFFF;
-  --secondary-hover-color: #E5E9EE;
+  --primary-color: #0c66e4;
+  --primary-hover-color: #0b3dab;
+  --secondary-color: #ffffff;
+  --secondary-hover-color: #e5e9ee;
   --hover-grey: #ebecef;
   --table-click: #09296d;
   --badge-critical: #ae1800;
   --badge-critical-bg: #fdd4cd;
   --badge-complete: #24663b;
-  --badge-complete-bg:  #c3e6cd;
+  --badge-complete-bg: #c3e6cd;
   --badge-warning: #8f4700;
   --badge-warning-bg: #f5d9a8;
   --badge-cancelled: #535158;
   --badge-cancelled-bg: #bfbfc3;
   --badge-pending: #626168;
   --badge-pending-bg: #bfbfc3;
-  --badge-active: #FFFFFF;
+  --badge-active: #ffffff;
   --badge-active-bg: #267b43;
 
-  --badge-secondary: #E6E6E6;
-  --badge-secondary-color: #BFBFC3;
-
+  --badge-secondary: #e6e6e6;
+  --badge-secondary-color: #bfbfc3;
 
   /* // --default-border : #ECECEC; */
 }
-

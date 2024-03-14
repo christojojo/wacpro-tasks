@@ -24,7 +24,7 @@ const Button = ({
     >
       {loading ? (
         <div className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 flex items-center justify-center">
-          <Loader/>
+          <Loader variant={'loader-primary'}/>
         </div>
       ) : (
         ""

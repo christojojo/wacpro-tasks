@@ -1,9 +1,9 @@
 import React from 'react'
 import './loader.scss'
 
-function Loader() {
+function Loader({variant}) {
   return (
-    <span className='loader'></span>
+    <span className={`loader ${variant}`}></span>
   )
 }
 

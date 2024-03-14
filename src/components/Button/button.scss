@@ -7,7 +7,11 @@
         bg-primary
         hover:bg-primary-hover
         rounded-sm
+        border
+        border-primary
+        hover:border-primary-hover
         transition-all;
+        
     &.xs {
       @apply border-0 h-5 w-5;
     }
@@ -33,6 +37,8 @@
            bg-secondary
            hover:bg-secondary-hover
            rounded-sm
+           border
+           border-borderGrey
            transition-all;
            &.xs {
             @apply border-0 h-5 w-5;

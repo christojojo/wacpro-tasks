@@ -19,6 +19,13 @@ updatedTodos.splice(index,1);
 setTodos(updatedTodos);
 }
 
+document.addEventListener('keypress' , (e) => {
+  console.log(e);
+  if (e.keyCode === 13){
+    addTodo()
+  }
+})
+
   return (
     <div className='mt-20 w-[325px]'>
     <h1 className='font-bold text-2xl mb-3'>TodoList</h1>
@@ -35,8 +42,7 @@ setTodos(updatedTodos);
             <li className="mb-1" key={i}>{item}</li> 
               <button onClick={()=> {deleteTodo(i)}} className="bg-red-500 text-white px-2  rounded flex justify-center items-baseline">x</button></div>))}
         </ul>
-    </div>
-    
+    </div>    
     </div>
   )
 }

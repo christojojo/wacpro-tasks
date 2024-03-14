@@ -1,110 +1,65 @@
 
-// import React, { useEffect, useState } from "react";
-
-// function NavbarPage() {
-//   const navbars = [
-//     { title: "Overview" },
-//     { title: "Profiles" },
-//     { title: "Settings" },
-//     { title: "Contacts" },
-//     { title: "Proposals" },
-//     { title: "Project" },
-//     { title: "Billing items" },
-//     { title: "Invoices" },
-//     { title: "Transactions" },
-//     { title: "Emails" },
-//     { title: "Notes" },
-//     { title: "Log" },
-//   ];
-
-//   const [activeItem, setActiveItem] = useState(0);
-//   const [afterStyles, setAfterStyles] = useState({});
-
-//   const handleClick = (index, e) => {
-//     setActiveItem(index);
-//     const { clientWidth, offsetLeft } = e.target;
-//     setAfterStyles({
-//       width: `${clientWidth}px`,
-//       left: `${offsetLeft}px`,
-//     });
-//   };
-//   return (
-//     <div className="navbar pt-20">
-//       <ul
-//         className={`navbar-items flex gap-6 border-b border-grey relative *:text-[14px] *:font-medium *:leading-[20px] *:py-2`}
-//       >
-//         {navbars.map((data, index) => {
-//           return (
-//             <li
-//               key={index}
-//               className={`cursor-pointer elements`}
-//               onClick={(e) => handleClick(index, e)}
-//             >
-//               {data.title}
-//             </li>
-//           );
-//         })}
-//         <li
-//           className="floater"
-//           style={{
-//             "--nav-floater-width": afterStyles.width,
-//             "--nav-floater-left": afterStyles.left,
-//           }}
-//         ></li>
-//       </ul>
-//     </div>
-//   );
-// }
-
-// export default NavbarPage;
-
-
-import React, { useState } from "react";
-
-  const navbars = [
-    { title: "Overview" },
-    { title: "Profiles" },
-    { title: "Settings" },
-    { title: "Contacts" },
-    { title: "Proposals" },
-    { title: "Project" },
-    { title: "Billing items" },
-    { title: "Invoices" },
-    { title: "Transactions" },
-    { title: "Emails" },
-    { title: "Notes" },
-    { title: "Log" },
-  ];
-
+import React, { useEffect, useRef, useState } from "react";
 function NavbarPage(){
-    const [ activeItem,setActiveItem]=useState(0)
-    const [afterStyles,setAfterStyles]=useState([])
+    const [ activeItem,setActiveItem]=useState(0);
+    const [afterStyles,setAfterStyles]=useState({});
+
+    const list = useRef([]);
+
+    const navbars = [
+        { title: "Overview" },
+        { title: "Profiles" },
+        { title: "Settings" },
+        { title: "Contacts" }, 
+        { title: "Proposals" },
+        { title: "Project" },
+        { title: "Billing items" },
+        { title: "Invoices" },
+        { title: "Transactions" },
+        { title: "Emails" },
+        { title: "Notes" },
+        { title: "Log" },
+      ];
+
+      useEffect(() => {
+        const firstItem = list?.current[0]; 
+        setAfterStyles({
+            width:`${firstItem?.clientWidth}px`,
+            left:`${firstItem?.offsetLeft}px`
+        })
+      }, [])
 
     const handleClick=(index,e)=>{
-        setActiveItem(index)
-        console.log(e.target.clientWidth,"width",e.target.offsetLeft,"left value");
-    const { clientWidth, offsetLeft } = e.target;
+
+        setActiveItem(index);
+
+        const { clientWidth, offsetLeft } = e.target;
+
         setAfterStyles({
             width:`${clientWidth}px`,
             left:`${offsetLeft}px`
         })
-        }
+    }
 
     return(
-        <div className="pt-24">
-            <ul className="flex gap-6 border-b border-grey relative *:text-[14px] *:font-medium *:leading-[20px] *:py-2 ">
+        <div className="pt-24" >
+            <ul className="flex gap-6 border-b border-grey relative *:text-[14px] *:font-medium *:leading-[20px] *:py-2 " >
           {navbars.map((item,index)=> {
             return(
                 <li key={index}
-                    className={`cursor-pointer `}
-                    onClick={(e)=>{handleClick(index,e)}}>
+                    className={`cursor-pointer `}    
+                    onClick={(e)=>{handleClick(index,e)}}
+                    ref={(el)=>list.current.push(el)}
+                    >
                     {item.title}
                 </li>
             )
           })}
-          <li className="floater" style={{'--nav-floater-width':afterStyles.width,'--nav-floater-left':afterStyles.left}}></li>
+          <span className="floater" style={{'--nav-floater-width':afterStyles.width,'--nav-floater-left':afterStyles.left}} ></span>
           </ul>
+          
         </div>
     )
 }
 export default NavbarPage
+

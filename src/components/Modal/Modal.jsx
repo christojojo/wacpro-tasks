@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Modal.css";
 import Button from "../Button/index";
 
-function Modal({ModalTitle,ModalContent}) {
+function Modal({ModalTitle,ModalContent,className}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const openmodal = () => {
@@ -25,7 +25,7 @@ function Modal({ModalTitle,ModalContent}) {
           Launch Modal
         </Button>
         {isOpen && (
-          <div className="modal-dialog mx-auto max-w-[500px] border relative rounded z-50 opacity-1 bg-white">
+          <div className={`modal-dialog mx-auto w-full border relative rounded z-50 opacity-1 bg-white ${className || 'max-w-[500px]'}`}>
             <div className="modal-content  rounded border-grey ">
               <div className="modal-title flex justify-between items-center p-4 rounded border-b">
                 <h1 className="text-[20px] font-medium ">{ModalTitle}</h1>

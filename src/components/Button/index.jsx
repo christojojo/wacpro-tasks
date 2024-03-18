@@ -11,10 +11,11 @@ const Button = ({
   size = `md`,
   isCenter,
   loading=false,
-  count,  
+  count, 
   ...props
 }) => {
   const center = isCenter ? `justify-center` : ``;
+
   return (
     <button
       className={`btn btn-${variant} ${size} flex items-center justify-center ${center} relative ${loading ? "pointer-events-none" : "pointer-events-all"} ${

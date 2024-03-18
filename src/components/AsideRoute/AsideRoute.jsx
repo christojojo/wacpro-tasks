@@ -49,6 +49,9 @@ const isActive = (path) => {
                     <li className={isActive('/navbar') ? "text-primary" : '' }>
                         <Link to='/navbar'>Navbar</Link>
                     </li> 
+                    <li className={isActive('/modal') ? "text-primary" : '' }>
+                        <Link to='/modal'>Modal</Link>
+                    </li> 
                                
                 </ul>
             </aside>

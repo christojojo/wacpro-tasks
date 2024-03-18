@@ -14,6 +14,7 @@ import ReactTodo from './pages/ReactTodo';
 import RadioButtonPage from './pages/RadioButtonPage';
 import LoaderPage from './pages/LoaderPage';
 import NavbarPage from './pages/NavbarPage';
+import ModalPage from './pages/ModalPage';
 
 function App() {
 
@@ -33,7 +34,9 @@ function App() {
       <Route path='/radio'    element={<RadioButtonPage/>}/>
       <Route path='/loader'   element={<LoaderPage/>}/>
       <Route path='/navbar'   element={<NavbarPage/>}/>
+      <Route path='/modal'   element={<ModalPage/>}/>
       <Route path='*'         element={<NoPage/>}       />
+
     </Routes>
     </div>
     </BrowserRouter> 

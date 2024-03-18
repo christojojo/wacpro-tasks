@@ -7,6 +7,7 @@ function ModalPage() {
       <Modal 
       ModalTitle='Modal Title'
       ModalContent='lorem ipsun kaplicha kuplinja kapalmayathu.....'
+      ModalWidth='500px'
        ></Modal>
     </div>
   )

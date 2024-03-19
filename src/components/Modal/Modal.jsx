@@ -8,6 +8,7 @@ function Modal({ ModalTitle, ModalContent, className, centered = false }) {
 
   const openmodal = () => {
     setIsOpen(true);
+    document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
@@ -30,11 +31,11 @@ function Modal({ ModalTitle, ModalContent, className, centered = false }) {
             {createPortal(
               <>
                 <div
-                  className="fixed inset-0 z-10 bg-black opacity-50"
+                  className="fixed inset-0 z-10 bg-ModalFade opacity-100 overflow-auto"
                   onClick={closeModal}
-                ></div>
+                >
                 <div
-                  className={`modal-dialog mx-auto w-full border rounded z-50 opacity-1 bg-white absolute left-1/2 -translate-x-1/2 ${
+                  className={`modal-dialog mx-auto w-full border rounded z-50 opacity-1 bg-white absolute left-1/2 -translate-x-1/2  ${
                     className || "max-w-[500px]"
                   } 
                    ${centered ? "top-1/2 -translate-y-1/2" : "top-20"}`}
@@ -74,12 +75,13 @@ function Modal({ ModalTitle, ModalContent, className, centered = false }) {
                     </div>
                   </div>
                 </div>
+                </div>
               </>,
               document.body
             )}
           </>
         )}
-      </div>
+      </div> 
     </div>
   );
 }

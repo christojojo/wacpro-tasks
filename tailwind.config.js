@@ -49,6 +49,8 @@ const backgroundColor = {
   tablehead: "var(--zenbor-tablehead)",
   tableheaditemhover: "var(--table-head-item-bg-hover)",
   layout: "var(--layout-grey)",
+  asideBg: "var(--aside-bg)",
+  ModalFade: "var(--Modal-Fade)",
 };
 
 const borderColor = {
@@ -60,6 +62,7 @@ const borderColor = {
   child: "var(--zenbor-child)",
   parent: "var(--zenbor-parent)",
   borderGrey: "var(--secondary-hover-color)",
+  asideBorder: "var(--aside-border)"
 };
 
 

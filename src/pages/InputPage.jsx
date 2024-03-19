@@ -2,6 +2,7 @@ import React from 'react'
 import Input from '../components/Input/Input'
 import Button from '../components/Button'
 import { useState } from 'react'
+import Modal from '../components/Modal/Modal';
 
 
 function InputPage() {
@@ -9,6 +10,7 @@ function InputPage() {
 
   return (
     <div className='element-wrap'>
+      
       <div className='max-w-lg mx-auto'>
     <div className='flex flex-col items-center justify-center font-semibold  pt-4 space-y-2'>
       <h1 className='font-semibold text-2xl my-4'>Input</h1>

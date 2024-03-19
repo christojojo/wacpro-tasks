@@ -6,11 +6,11 @@ function LineBarGraph() {
     {id:"1",Department:"UI",WorkingHours:"119",color:"#49AB0A"},
     {id:"2",Department:"React",WorkingHours:"68",color:"#8ECCFD"},
     {id:"3",Department:"Wordpress",WorkingHours:"65",color:"#14C8C8"},
-    {id:"4",Department:"Python",WorkingHours:"154",color:"#FFC13C"},
-    {id:"5",Department:"React",WorkingHours:"194",color:"#2DB1FB"},
+    {id:"4",Department:"Python",WorkingHours:"124",color:"#FFC13C"},
+    {id:"5",Department:"React",WorkingHours:"161",color:"#2DB1FB"},
   ]
   
-  const TotalHours = '600' 
+  const TotalHours = '537' 
 
   return (
 

@@ -8,6 +8,7 @@ function ModalPage() {
       ModalTitle='Modal Title'
       ModalContent='lorem ipsum kaplicha kuplinja kapalmayathu.....'
       className='max-w-[500px] '
+      centered={true}
        ></Modal>
     </div>
   )

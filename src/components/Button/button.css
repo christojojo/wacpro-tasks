@@ -7,7 +7,12 @@
         bg-primary
         hover:bg-primary-hover
         rounded-sm
-        transition-all;
+        border
+        border-primary
+        hover:border-primary-hover
+        transition-all
+        ease-in-out
+        duration-150;
 }
 .btn-primary.xs {
   @apply border-0 h-5 w-5;
@@ -31,8 +36,10 @@
            hover:bg-secondary-hover
            rounded-sm
            border
-           border-black
-           transition-all;
+           border-borderGrey
+           transition-all
+           ease-in-out
+           duration-150;
 }
 .btn-secondary.xs {
   @apply border-0 h-5 w-5;

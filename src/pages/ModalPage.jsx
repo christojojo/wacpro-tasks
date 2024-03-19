@@ -6,7 +6,7 @@ function ModalPage() {
     <div className='w-full'>
       <Modal 
       ModalTitle='Modal Title'
-      ModalContent='lorem ipsun kaplicha kuplinja kapalmayathu.....'
+      ModalContent='lorem ipsum kaplicha kuplinja kapalmayathu.....'
       className='max-w-[500px] '
        ></Modal>
     </div>

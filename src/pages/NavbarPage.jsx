@@ -1,11 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
+
 function NavbarPage() {
+
   const [activeItem, setActiveItem] = useState(0);
+  const [activeDes,setActiveDes] = useState(0);
   const [afterStyles, setAfterStyles] = useState({});
 
   const list = useRef([]);
 
-  console.log(list, "list");
+  // console.log(list, "list");
 
   const navbars = [
     { title: "Overview" },
@@ -22,6 +25,21 @@ function NavbarPage() {
     { title: "Log" },
   ];
 
+  const descriptions= [ 
+    { des: 'description one'},
+    { des: 'description Two'},
+    { des: 'description three'},
+    { des: 'description Four'},
+    { des: 'description Five'},
+    { des: 'description Six'},
+    { des: 'description Seven'},
+    { des: 'description Eight'},
+    { des: 'description Nine'},
+    { des: 'description Ten'},
+    { des: 'description Eleven'},
+    { des: 'description Twelve lorem ipsum '}    
+  ]
+
   useEffect(() => {
     const firstItem = list?.current[0];
     setAfterStyles({
@@ -31,6 +49,7 @@ function NavbarPage() {
   }, []);
 
   const handleClick = (index, e) => {
+
     setActiveItem(index);
 
     const { clientWidth, offsetLeft } = e.target;
@@ -40,7 +59,6 @@ function NavbarPage() {
       left: `${offsetLeft}px`,
     });
   };
-
   return (
     <div className="pt-24">
       <ul className="flex gap-6 border-b border-grey relative *:text-[14px] *:font-medium *:leading-[20px] *:py-2 ">
@@ -64,54 +82,24 @@ function NavbarPage() {
           }}
         ></span>
       </ul>
+      <div className="max-w-[400px] py-10">
+          
+            {descriptions.map((item,index)=>{
+              console.log(item.des,index);
+                return(
+                  <div>
+                    <div key={index}
+                         className={ activeItem===index ? "block" : "hidden"}
+                    >
+                    {item.des}
+                    </div> 
+                  </div>
+                )
+            })}
+          
+          </div>
     </div>
   );
 }
 export default NavbarPage;
 
-
-// import React from "react";
-// import { useState } from "react";
-//   function NavbarPage(){
-
-//     const [activeItem,setActiveItem]=useState(0)
-
-//     const handleClick = (index, e) => {
-//     setActiveItem(index);
-//     console.log(index);
-//   };
-
-//       const navbars = [
-//     { title: "Overview" },
-//     { title: "Profiles" },
-//     { title: "Settings" },
-//     { title: "Contacts" },
-//     { title: "Proposals" },
-//     { title: "Project" },
-//     { title: "Billing items" },
-//     { title: "Invoices" },
-//     { title: "Transactions" },
-//     { title: "Emails" },
-//     { title: "Notes" },
-//     { title: "Log" },
-//   ];
-
-
-
-//     return(
-//       <div className="pt-24">
-//         <ul className="flex gap-6 relative border-b border-grey *:py-2 *:cursor-pointer">
-//           {navbars.map((item,index)=>{
-//             // console.log(item.title);
-//             return(
-//               <li key={index}
-//                   className={`${activeItem === index ? "text-red-500" : ""}`}
-//                   onClick={(e) => {handleClick(index)}}
-//                   >{item.title}</li>
-//             )
-//           })}
-//         </ul>
-//       </div>
-//     )
-//   }
-//   export default NavbarPage

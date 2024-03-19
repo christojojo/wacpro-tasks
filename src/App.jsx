@@ -15,6 +15,8 @@ import RadioButtonPage from './pages/RadioButtonPage';
 import LoaderPage from './pages/LoaderPage';
 import NavbarPage from './pages/NavbarPage';
 import ModalPage from './pages/ModalPage';
+import Calculator from './pages/Calculator';
+import LineBarGraphPage from './pages/LineBarGraphPage';
 
 function App() {
 
@@ -34,8 +36,11 @@ function App() {
       <Route path='/radio'    element={<RadioButtonPage/>}/>
       <Route path='/loader'   element={<LoaderPage/>}/>
       <Route path='/navbar'   element={<NavbarPage/>}/>
-      <Route path='/modal'   element={<ModalPage/>}/>
+      <Route path='/modal'   element={<ModalPage/>}/>    
+      <Route path='/calculator'  element={<Calculator/>}       />
       <Route path='*'         element={<NoPage/>}       />
+      <Route path='/linebargraph' element={<LineBarGraphPage/>}       />
+
 
     </Routes>
     </div>

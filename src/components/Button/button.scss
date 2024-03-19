@@ -10,7 +10,9 @@
         border
         border-primary
         hover:border-primary-hover
-        transition-all;
+        transition-all
+        ease-in-out
+        duration-150;
         
     &.xs {
       @apply border-0 h-5 w-5;
@@ -39,7 +41,9 @@
            rounded-sm
            border
            border-borderGrey
-           transition-all;
+           transition-all
+           ease-in-out
+           duration-150;
            &.xs {
             @apply border-0 h-5 w-5;
           }

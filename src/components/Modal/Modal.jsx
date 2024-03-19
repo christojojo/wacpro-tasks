@@ -30,7 +30,7 @@ function Modal({ModalTitle,ModalContent,className}) {
               <div className="modal-title flex justify-between items-center p-4 rounded border-b">
                 <h1 className="text-[20px] font-medium ">{ModalTitle}</h1>
                 <button
-                  className="p-1"
+                  className="px-1 font-medium text-lg opacity-100 hover:opacity-80 transition-all duration-150 ease-in-out"
                   onClick={(e) => {
                     closeModal();
                   }}
@@ -52,9 +52,7 @@ function Modal({ModalTitle,ModalContent,className}) {
                 </Button>
                 <Button
                   variant="primary"
-                  onClick={(e) => {
-                    closeModal();
-                  }}
+                 onClick={(e)=>{closeModal()}}
                 >
                   Save
                 </Button>

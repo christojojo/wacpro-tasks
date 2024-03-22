@@ -53,8 +53,11 @@ const isActive = (path) => {
                     <li className={isActive('/linebargraph') ? "text-primary" : '' }>
                         <Link to='/linebargraph'>LineBarGraph</Link>
                     </li> 
-                    <li className={isActive('/chartjs') ? "text-primary" : '' }>
-                        <Link to='/chartjs'>ChartJs</Link>
+                    <li className={isActive('/simplebarchart') ? "text-primary" : '' }>
+                        <Link to='/simplebarchart'>Simple Bar Chart</Link>
+                    </li> 
+                    <li className={isActive('/linechart') ? "text-primary" : '' }>
+                        <Link to='/linechart'>Line Chart</Link>
                     </li> 
                     {/* <li className={isActive('/clickme') ? "text-primary" : '' }>
                         <Link to='/clickme'>Click Me</Link>

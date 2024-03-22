@@ -17,7 +17,8 @@ import NavbarPage from './pages/NavbarPage';
 import ModalPage from './pages/ModalPage';
 import Calculator from './pages/Calculator';
 import LineBarGraphPage from './pages/LineBarGraphPage';
-import ChartJs from './pages/ChartJs';
+import ChartPage from './pages/ChartPage';
+import LinechartPage from './pages/LinechartPage';
 
 function App() {
 
@@ -38,10 +39,11 @@ function App() {
       <Route path='/loader'   element={<LoaderPage/>}/>
       <Route path='/navbar'   element={<NavbarPage/>}/>
       <Route path='/modal'   element={<ModalPage/>}/>    
-      <Route path='/calculator'  element={<Calculator/>}       />
+      <Route path='/calculator'  element={<Calculator/>}/>
       <Route path='*'         element={<NoPage/>}       />
-      <Route path='/linebargraph' element={<LineBarGraphPage/>}       />
-      <Route path='/chartjs' element={<ChartJs/>}       />
+      <Route path='/linebargraph' element={<LineBarGraphPage/>}/>
+      <Route path='/simplebarchart' element={<ChartPage/>}/>
+      <Route path='/linechart' element={<LinechartPage/>}/>
 
 
     </Routes>

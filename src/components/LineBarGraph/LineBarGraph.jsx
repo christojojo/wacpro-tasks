@@ -15,18 +15,18 @@ function LineBarGraph() {
   return (
 
     <div className='pt-24'>      
-      <ul className='navbargraph flex space-x-[3px] w-[600px] *:h-[10px] '>
+      <ul className='navbargraph flex space-x-[3px] *:h-[10px] '>
       {detailes.map((item,index)=>{
-        console.log(item.WorkingHours);
+        // console.log(item.WorkingHours);
         const widthLi = ((item.WorkingHours/TotalHours)*100).toFixed(1);
-        console.log(widthLi,"widthli");
+        // console.log(widthLi,"widthli");
         const bgColors = item.color;
-        console.log(bgColors);
+        // console.log(bgColors);
 
         return(
           <li key={index}
-          className={`bg-[var(--bgColors)] w-[var(--widthLi)] first:rounded-l-lg last:rounded-r-lg relative group`}      
-          style={{'--widthLi':widthLi+"%",'--bgColors':bgColors}}        
+          className={`bg-backgroundColor w-width first:rounded-l-lg last:rounded-r-lg relative group`}      
+          style={{width: widthLi+"%", backgroundColor: bgColors}}        
           >
             <span className=' opacity-0 group-hover:opacity-100 text-[12px] p-[2px] rounded-sm border relative bottom-[27px] bg-slate-100 transition-all duration-200 ease-in-out z-50 whitespace-nowrap
                              after:content-[""] after:absolute after:bottom-[-5px] after:left-1 after:w-[8px] 

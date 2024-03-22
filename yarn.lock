@@ -666,6 +666,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kurkle/color@npm:^0.3.0":
+  version: 0.3.2
+  resolution: "@kurkle/color@npm:0.3.2"
+  checksum: 10c0/a9e8e3e35dcd59dec4dd4f0105919c05e24823a96347bcf152965c29e48d6290b66d5fb96c071875db752e10930724c48ce6d338fefbd65e0ce5082d5c78970e
+  languageName: node
+  linkType: hard
+
 "@material-ui/icons@npm:^4.11.3":
   version: 4.11.3
   resolution: "@material-ui/icons@npm:4.11.3"
@@ -1500,6 +1507,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chart.js@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "chart.js@npm:4.4.2"
+  dependencies:
+    "@kurkle/color": "npm:^0.3.0"
+  checksum: 10c0/4233bdc3cce9e4d5aca575f8ef9313f56867491b9eac027f3514ca807aca9a2ba2087f85ca3c68f022974f948ce688a178b0ce21d95706116abca5acf19e072f
+  languageName: node
+  linkType: hard
+
 "chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.5.3":
   version: 3.6.0
   resolution: "chokidar@npm:3.6.0"
@@ -1672,12 +1688,14 @@ __metadata:
     "@types/react-dom": "npm:^18.2.19"
     "@vitejs/plugin-react": "npm:^4.2.1"
     autoprefixer: "npm:^10.4.17"
+    chart.js: "npm:^4.4.2"
     eslint: "npm:^8.56.0"
     eslint-plugin-react: "npm:^7.33.2"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-react-refresh: "npm:^0.4.5"
     postcss: "npm:^8.4.35"
     react: "npm:^18.2.0"
+    react-chartjs-2: "npm:^5.2.0"
     react-dom: "npm:^18.2.0"
     react-router-dom: "npm:^6.22.2"
     sass: "npm:^1.71.0"
@@ -3685,6 +3703,16 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: 10c0/900a93d3cdae3acd7d16f642c29a642aea32c2026446151f0778c62ac089d4b8e6c986811076e1ae180a694cedf077d453a11b58ff0a865629a4f82ab558e102
+  languageName: node
+  linkType: hard
+
+"react-chartjs-2@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "react-chartjs-2@npm:5.2.0"
+  peerDependencies:
+    chart.js: ^4.1.1
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 10c0/437e443a268b7eebab3f1a6f0f5d936e58caf650fca55f568a612a46c563d22af683a64185eac8005aa644e4960a5a72cc1075a2574b89ec46c7653aaf4025e2
   languageName: node
   linkType: hard
 

@@ -6,7 +6,7 @@ Chart.register(...registerables);
 
 function LineChart() {
     const data = {
-        labels: ['','May', 'Jun', 'Jul', 'Aug'],
+        labels: ['May', 'Jun', 'Jul', 'Aug'],
         datasets: [
             {
                 label: '2023',
@@ -19,10 +19,9 @@ function LineChart() {
         ],
        
     };
-
     const options = {
         scales: {
-            x: {
+            x: {                
                 ticks: {
                     font: {
                         size: 11,
@@ -34,7 +33,7 @@ function LineChart() {
                     display: false,
                 },
             },
-            y: {
+            y: {                 
                 ticks: {
                     stepSize: 10,
                     font: {
@@ -51,7 +50,6 @@ function LineChart() {
             legend:{
                 display:true,
                 position : 'top',
-
                 title : {
                     display : true,
                     text : 'Line Chart Example',
@@ -59,11 +57,10 @@ function LineChart() {
                 labels: {
                     boxWidth : 9,
                     boxHeight : 9,
-                    align : 'left' ,
+                    align : 'center' ,
                      font: {
                         size: 12,
                         weight: 'normal',
-                        
                     },
                 }
             }
@@ -72,7 +69,7 @@ function LineChart() {
     };
 
     return (
-        <div style={{ width: '454px' }}>
+        <div style={{ width: '454px' }} className='line-chart'>
             <h2 className="text-[16px] font-medium pb-4">Simple Line Chart Example</h2>
             <Line data={data} options={options} />
         </div>
@@ -81,5 +78,3 @@ function LineChart() {
 }
 
 export default LineChart;
-
-

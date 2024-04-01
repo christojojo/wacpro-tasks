@@ -1,0 +1,56 @@
+.stackedbarchart input{
+    display: none;
+}
+.stackedbarchart input + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+.stackedbarchart input + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px; 
+    height: 16px; 
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+}
+.stackedbarchart input:checked + label:before {
+    background-color: #007bff;
+    border-color: #007bff; 
+}
+.stackedbarchart input + label:after {
+    content: ''; 
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    color: #fff; 
+    width: 10px;
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.5367 7.16759L0.556641 4.18753L1.61706 3.12712L3.5367 5.04676L8.33737 0.246094L9.39779 1.30651L3.5367 7.16759Z' fill='%23FFFEFF'/%3E%3C/svg%3E%0A");    font-size: 16px; 
+    background-repeat: no-repeat;  
+    z-index: 1;
+    display: none; 
+}
+.stackedbarchart input:checked + label:after {
+    display: block;
+}
+
+#react-checkbox + label:before{
+    background: #8ECCFD;
+    border-color: #8ECCFD;
+}
+#design-checkbox + label:before{
+    background: #2DB1FB;
+    border-color: #2DB1FB;
+}
+#wordpress-checkbox + label:before{
+    background: #68BF30;
+    border-color: #68BF30;
+}
+#ba-checkbox + label:before{
+    background: #FFC13D;
+    border-color: #FFC13D;
+}

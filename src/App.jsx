@@ -19,6 +19,7 @@ import Calculator from './pages/Calculator';
 import LineBarGraphPage from './pages/LineBarGraphPage';
 import ChartPage from './pages/ChartPage';
 import LinechartPage from './pages/LinechartPage';
+import StackBarChart from './components/StackBarChart/StackBarChart';
 
 function App() {
 
@@ -44,8 +45,7 @@ function App() {
       <Route path='/linebargraph' element={<LineBarGraphPage/>}/>
       <Route path='/simplebarchart' element={<ChartPage/>}/>
       <Route path='/linechart' element={<LinechartPage/>}/>
-
-
+      <Route path='/stackbarchart' element={<StackBarChart/>}/>
     </Routes>
     </div>
     </BrowserRouter> 

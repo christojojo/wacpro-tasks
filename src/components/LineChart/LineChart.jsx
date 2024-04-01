@@ -14,10 +14,9 @@ function LineChart() {
                 borderColor: '#0C66E4',
                 borderWidth: 2,
                 data: [10,10, 35, 41, 37], 
-                pointRadius: 0,
+                pointRadius: 1,
             },
         ],
-       
     };
     const options = {
         scales: {
@@ -63,6 +62,9 @@ function LineChart() {
                         weight: 'normal',
                     },
                 }
+            },
+            tooltip : {
+                enabled : true,
             }
         }
       

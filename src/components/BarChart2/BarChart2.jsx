@@ -24,7 +24,7 @@ function BarChart2() {
   return (
     <div style={{width: '500px'}}>
       <h2 className='text-[16px] font-medium pb-4'>Barchart 2</h2>
-      <Bar data={data}></Bar>
+      <Bar data={data} ></Bar>
     </div>
   )
 }

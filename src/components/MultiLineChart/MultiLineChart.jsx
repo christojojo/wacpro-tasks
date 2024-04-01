@@ -1,6 +1,7 @@
 import React from 'react'
 import { Line } from 'react-chartjs-2'
 
+
 function MultiLineChart() {
 
     const data = {
@@ -10,34 +11,33 @@ function MultiLineChart() {
                 label : 'Paid',
                 backgroundColor : '#0C66E4',
                 borderColor : '#0C66E4',
-                data : [20,20,35,35,42,31,36,30],
+                data : [20,20,35,35,42,31,36,30,23,25],
                 pointRadius: 0,
             },
             {
                 label : 'Organic', 
                 backgroundColor : '#EC9B60',
                 borderColor : '#EC9B60',
-                data : [26,23,20,31,41,43,38,28,23,25],
+                data : [26,23,20,29,42,43,38,28,23,25],
                 pointRadius: 0,
             }
         ]
     }
     const options = {
-        scales : {    
-            
-            x : {    
+        scales : {                
+            x : {   
                 grid :{
                     display : false,
                 },                                              
-                ticks : {                    
+                ticks : { 
+                    maxTicksLimit : 6,                   
                     font : {
                         size : 11,
                         weight : 'normal',
                     }
                 },                                                                                                                                                                                                                                                                                                                                                                                                                  
             },
-            y : {   
-                                                      
+            y : {                                                     
                 ticks : {
                     font : {
                         size: 11,
@@ -55,9 +55,8 @@ function MultiLineChart() {
                 position : 'top',
                 align : 'center',
                 maxHeight : 36,
-                textAlign : 'center',
-                
-                labels : {
+                textAlign : 'center',                
+                 labels : {
                     boxWidth : 9,
                     boxHeight : 9,
                     padding :16,
@@ -66,8 +65,11 @@ function MultiLineChart() {
                         size : 12,
                         weight : 'normal',
                     } 
-                 }
-            }
+                 },
+            },   
+            tooltip : {
+                enabled : true,  
+            }         
         }
     }
   return (

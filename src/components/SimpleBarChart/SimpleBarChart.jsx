@@ -20,10 +20,17 @@ function SimpleBarChart() {
         }
     ]
 }
+const options= {
+  plugins : {
+    tooltip : {
+      enabled : true,
+    }
+  }
+}
   return (
     <div>
       <h2 className='text-[16px]  font-medium pb-4'>Simple Bar Chart Example</h2>
-      <Bar data={data}></Bar>
+      <Bar data={data} options={options}></Bar>
     </div>
   )
 }

@@ -10,8 +10,8 @@ const isActive = (path) => {
    return location.pathname === path; 
 }
     return (
-        <div className='bg-asideBg text-black w-[276px] h-screen border-r-[6px] border-asideBorder sticky top-0'>
-            <aside className='p-[15px] mt-[40px]'>
+        <div className='bg-asideBg text-black w-[276px] h-screen  sticky top-0 border-r-[6px] border-asideBorder'>
+            <aside className='p-[15px] mt-[40px] bg-asideBg '>
                 <ul className='*:text-[15px] *:pb-[15px] *:font-medium *:w-fit'>
                     <li className={isActive('/') ? 'text-primary' : ''}>
                         <Link to='/'>Home</Link>
@@ -59,6 +59,9 @@ const isActive = (path) => {
                     <li className={isActive('/linechart') ? "text-primary" : '' }>
                         <Link to='/linechart'>Line Chart</Link>
                     </li> 
+                    <li className={isActive('/stackbarchart') ? "text-primary" : '' }>
+                        <Link to='/stackbarchart'>Stack Bar Chart</Link>
+                    </li>
                     {/* <li className={isActive('/clickme') ? "text-primary" : '' }>
                         <Link to='/clickme'>Click Me</Link>
                     </li>  */}

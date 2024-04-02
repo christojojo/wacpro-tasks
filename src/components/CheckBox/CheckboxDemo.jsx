@@ -12,13 +12,13 @@ function CheckboxDemo({
 }) {
   const isSm = size === "sm";
 
-  const [checked,setChecked]=useState(false)
+  const [checked, setChecked] = useState(false);
 
   console.log(checked);
 
-  const handleClick =()=>{
-  setChecked(!checked)
-}
+  const handleClick = () => {
+    setChecked(!checked);
+  };
   return (
     <div className=" flex items-center">
       {label && (
@@ -27,23 +27,30 @@ function CheckboxDemo({
         </label>
       )}
       <div className="relative">
-      <input
-        id={id}
-        type="checkbox"
-        className={`appearance-none border-2 align-middle rounded-[3px] border-[#E2E6E9] cursor-pointer checked:bg-primary checked:border-primary 
+        <input
+          id={id}
+          type="checkbox"
+          className={`appearance-none border-2 align-middle rounded-[3px] border-[#E2E6E9] cursor-pointer checked:bg-primary checked:border-primary 
                     ${isSm ? "w-4 h-4" : "w-5 h-5"} 
-                    ${isToggle
-                          ? "w-[44px] h-[24px] rounded-[50px] bg-[#E2E8F0] bg-none relative"
-                          : ""
-                      } `}
-        onClick={handleClick}
-      />
-      {!isToggle &&  <span className={`material-symbols-outlined text-white absolute  text-lg pointer-events-none ${isSm ? 'left-[-1px] top-[3px]' : 'top-[3px] left-[1px]'}`}>
-        check
-      </span>}   
-      {isToggle &&(
-        <span className={`w-5 h-5 bg-white rounded-full absolute top-[2px] left-[3px]  pointer-events-none transition-all duration-300 ease-in-out ${ checked ? "translate-x-[18px]" : "translate-x-[0px]"}`}  ></span> 
-      )}        
+                    ${isToggle && "w-[44px] h-[24px] rounded-[50px] bg-[#E2E8F0] bg-none relative" } `}
+          onClick={handleClick} />
+
+        {!isToggle && (
+          <span
+            className={`material-symbols-outlined text-white absolute  text-lg pointer-events-none ${
+              isSm ? "left-[-1px] top-[3px]" : "top-[3px] left-[1px]"
+            }`}
+          >
+            check
+          </span>
+        )}
+        {isToggle && (
+          <span
+            className={`w-5 h-5 bg-white rounded-full absolute top-[2px] left-[3px]  pointer-events-none transition-all duration-300 ease-in-out ${
+              checked ? "translate-x-[18px]" : "translate-x-[0px]"
+            }`}
+          ></span>
+        )}
       </div>
 
       {labelR && (

@@ -12,14 +12,14 @@ function BarChart3() {
                 borderWidth: 1,
                 hoverBackgroundColor: 'rgba(75,192,192,0.4)',
                 hoverBorderColor: 'rgba(75,192,192,1)',
-                data: [2,10,6,25,20,12]
+                data: [2,10,7,22,20,12]
             }
         ]
     }
     const options = {
      scales : {
         x : {
-            display : true,                
+            display : false,                
         },
 
         y : {

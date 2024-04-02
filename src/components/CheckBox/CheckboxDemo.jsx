@@ -1,17 +1,58 @@
-import React from 'react'
-import './checkbox.scss'
+import React, { useState } from "react";
+import "./checkbox.scss";
 
-function CheckboxDemo({ id, label,labelR, variant, isToggle,...props }) {
+function CheckboxDemo({
+  id,
+  label,
+  labelR,
+  variant,
+  isToggle,
+  size,
+  ...props
+}) {
+  const isSm = size === "sm";
 
+  const [checked,setChecked]=useState(false)
+
+  console.log(checked);
+
+  const handleClick =()=>{
+  setChecked(!checked)
+}
   return (
-    <>
-      {label && <label htmlFor={id} className='text-md pr-4 cursor-pointer'>{label}</label>}
-      <input id={id} type="checkbox" className={`${variant} bg-no-repeat align-middle appearance-none checked:bg-primary transition-all duration-100 ease-in-out cursor-pointer ${label ? 'ml-4' : 'ml-0'}
-                                                 ${isToggle ? `rounded-[50px] bg-[#E2E8F0] bg-[12%] checked:bg-[88%] `
-          : `rounded-[3px] bg-center border-2 border-[#E2E6E9]  checked:border-primary  bg-checkMark`} `} {...props} />
-          {labelR && <label htmlFor={id} className='text-md pl-4 cursor-pointer'>{labelR}</label>}
-    </>
-  )
+    <div className=" flex items-center">
+      {label && (
+        <label htmlFor={id} className="text-md pr-4 cursor-pointer">
+          {label}
+        </label>
+      )}
+      <div className="relative">
+      <input
+        id={id}
+        type="checkbox"
+        className={`appearance-none border-2 align-middle rounded-[3px] border-[#E2E6E9] cursor-pointer checked:bg-primary checked:border-primary 
+                    ${isSm ? "w-4 h-4" : "w-5 h-5"} 
+                    ${isToggle
+                          ? "w-[44px] h-[24px] rounded-[50px] bg-[#E2E8F0] bg-none relative"
+                          : ""
+                      } `}
+        onClick={handleClick}
+      />
+      {!isToggle &&  <span className={`material-symbols-outlined text-white absolute  text-lg pointer-events-none ${isSm ? 'left-[-1px] top-[3px]' : 'top-[3px] left-[1px]'}`}>
+        check
+      </span>}   
+      {isToggle &&(
+        <span className={`w-5 h-5 bg-white rounded-full absolute top-[2px] left-[3px]  pointer-events-none transition-all duration-300 ease-in-out ${ checked ? "translate-x-[18px]" : "translate-x-[0px]"}`}  ></span> 
+      )}        
+      </div>
+
+      {labelR && (
+        <label htmlFor={id} className="text-md pl-4 cursor-pointer">
+          {labelR}
+        </label>
+      )}
+    </div>
+  );
 }
 
-export default CheckboxDemo
+export default CheckboxDemo;

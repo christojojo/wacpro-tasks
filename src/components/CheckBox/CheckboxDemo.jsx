@@ -20,7 +20,7 @@ function CheckboxDemo({ id, label, labelR, isToggle, size, ...props }) {
             (isSm ? "w-[34px] h-[18px] rounded-[50px] bg-[#E2E8F0] bg-none relative" : "w-[44px] h-[24px] rounded-[50px] bg-[#E2E8F0] bg-none relative") : (isSm ? "w-4 h-4" : "w-5 h-5")}`}                    
           onClick={handleClick}
         />
-        {!isToggle && <span className={`material-symbols-outlined text-white absolute text-lg pointer-events-none ${isSm ? "left-[-1px] top-[-1px]" : "top-[1px] left-[1px]"}`}>check</span>}
+        {!isToggle && <span className={`material-symbols-outlined text-white absolute text-lg pointer-events-none ${isSm ? "left-[-1px] top-[50%] -translate-y-1/2" : "top-[50%] -translate-y-1/2 left-[1px]"}`}>check</span>}
         {isToggle && (
           <span
             className={`${isSm ? "w-[14px] h-[14px] bg-white rounded-full absolute top-[50%] -translate-y-1/2 left-[3px] pointer-events-none transition-all duration-300 ease-in-out" : "w-5 h-5 bg-white rounded-full absolute top-[50%] -translate-y-1/2 left-[3px] pointer-events-none transition-all duration-300 ease-in-out"}

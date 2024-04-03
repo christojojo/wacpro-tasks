@@ -9,14 +9,14 @@ function CheckboxPage() {
    <div className='p-[20px]'>
       <div className='flex gap-[15px] justify-center mb-[12px]'>
         <span>
-        <CheckboxDemo isToggle='true' size={'sm'}/>
+        <CheckboxDemo isToggle='true' size={'lg'}/>
         </span>
         <span>
         <CheckboxDemo isToggle='true' size={'lg'}/>
         </span>
       </div>
       <div className='flex gap-[15px] justify-center mb-[11px]'>
-        <CheckboxDemo isToggle='true' size={'lg'}/>
+        <CheckboxDemo isToggle='true' size={'sm'}/>
         <CheckboxDemo isToggle='true' size={'sm'}/>
       </div>
       <div className='flex  mb-[12px] p-[20px]'>

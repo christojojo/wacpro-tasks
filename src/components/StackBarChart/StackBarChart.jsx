@@ -43,6 +43,7 @@ const options = {
             ticks : {
                 stepSize : 100,
                 font: {
+                    fontFamily: 'Inter',
                     size: 12,
                     weight: 'medium', 
                 },
@@ -58,19 +59,26 @@ const options = {
             display : true,
             stacked : true,
             ticks : {
-                maxTicksLimit : 11,
+                // maxTicksLimit : 11,
+                font : {
+                    fontFamily: 'Inter',
+                }
             },
             grid : {
                 display : false,
                 lineWidth : 10,
-
-            },
-           
+            },           
         }
     },
     plugins : {
+        title : {
+            fontFamily: 'Inter',
+        },
         legend : {
             display : false,
+            labels : {
+                fontFamily: 'Inter',
+            }
         },
         tooltip : {
             enabled : true,
@@ -101,7 +109,10 @@ const options = {
     <div className='mt-24 w-full'>
         <div className='stackedbarchart flex gap-4 pb-4'>
             <div className='flex gap-[6px] items-start'>
-                <input type="checkbox" id='react-checkbox' className='mt-[3px] ' />
+                <div className='relative'>
+                <input type="checkbox" id='react-checkbox' className='w-[15px] h-[15px] appearance-none mt-[2px]  border-[#8ECCFD] border rounded-[3px] checked:bg-[#8ECCFD] checked:border-[#8ECCFD]' />
+                <span class="material-symbols-outlined text-md absolute top-[3px] left-[1px] pointer-events-none text-white">check</span>
+                </div>
                 <label htmlFor="react-checkbox">
                     <div className='text-[14px] font-semibold text-[#111111] leading-[17px]'>
                         React
@@ -112,7 +123,10 @@ const options = {
                 </label>
             </div>
             <div className='flex gap-[6px] items-start'>
-                <input type="checkbox" id='design-checkbox' className='mt-[3px] ' />
+                <div className='relative'>
+                <input type="checkbox" id='design-checkbox' className='mt-[2px] appearance-none w-[15px] h-[15px] border border-[#2DB1FB] rounded-[3px] checked:bg-[#2DB1FB] checked:border-[#2DB1FB]'/>
+                <span className='material-symbols-outlined text-md absolute top-[3px] left-0 text-white pointer-events-none'>check</span>
+                </div>
                 <label htmlFor="design-checkbox">
                     <div className='text-[14px] font-semibold text-[#111111] leading-[17px]'>
                         Design
@@ -123,7 +137,10 @@ const options = {
                 </label>
             </div>
             <div className='flex gap-[6px] items-start'>
-                <input type="checkbox" id='wordpress-checkbox' className='mt-[3px] ' />
+                <div className='relative'>
+                <input type="checkbox" id='wordpress-checkbox' className='mt-[2px] appearance-none w-[15px] h-[15px] border border-[#68BF30] rounded-[3px] checked:bg-[#68BF30] checked:border-[#68BF30]'/>
+                <span className='material-symbols-outlined text-md absolute top-[3px] left-[1px] text-white pointer-events-none'>check</span>
+                </div>
                 <label htmlFor="wordpress-checkbox">
                     <div className='text-[14px] font-semibold text-[#111111] leading-[17px]'>
                         Wordpress
@@ -134,7 +151,10 @@ const options = {
                 </label>
             </div>
             <div className='flex gap-[6px] items-start'>
-                <input type="checkbox" id='ba-checkbox' className='mt-[3px] ' />
+            <div className='relative'>
+                <input type="checkbox" id='ba-checkbox' className='mt-[2px] appearance-none w-[15px] h-[15px] border border-[#FFC13D] rounded-[3px] checked:bg-[#FFC13D] checked:border-[#FFC13D]'/>
+                <span className='material-symbols-outlined text-md absolute top-[3px] left-[1px] text-white pointer-events-none'>check</span>
+                </div>
                 <label htmlFor="ba-checkbox">
                     <div className='text-[14px] font-semibold text-[#111111] leading-[17px]'>
                     Business analyst 
@@ -142,7 +162,7 @@ const options = {
                     <div className='text-[12px] font-medium text-[#727272] leading-[17px]'>
                         40
                     </div>
-                </label>
+                </label> 
             </div>
            
         </div>

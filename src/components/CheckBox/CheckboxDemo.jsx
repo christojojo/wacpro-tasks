@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./checkbox.scss";
 
 function CheckboxDemo({ id, label, labelR, isToggle, size, ...props }) {
   const isSm = size === "sm";

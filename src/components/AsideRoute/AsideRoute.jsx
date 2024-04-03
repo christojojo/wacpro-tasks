@@ -47,9 +47,9 @@ const isActive = (path) => {
                     <li className={isActive('/modal') ? "text-primary" : '' }>
                         <Link to='/modal'>Modal</Link>
                     </li> 
-                    <li className={isActive('/calculator') ? "text-primary" : '' }>
+                    {/* <li className={isActive('/calculator') ? "text-primary" : '' }>
                         <Link to='/calculator'>Calculator</Link>
-                    </li> 
+                    </li>  */}
                     <li className={isActive('/linebargraph') ? "text-primary" : '' }>
                         <Link to='/linebargraph'>LineBarGraph</Link>
                     </li> 

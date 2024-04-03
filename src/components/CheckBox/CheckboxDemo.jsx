@@ -28,7 +28,7 @@ function CheckboxDemo({ id, label, labelR, isToggle, size, ...props }) {
           ></span>
         )}
       </div>
-      {labelR && <label htmlFor={id} className="text-md pl-4 cursor-pointer">{labelR}</label>}
+      {labelR && <label htmlFor={id} className="text-md pl-4 cursor-pointer">{labelR} </label>}
     </div>
   );
 }

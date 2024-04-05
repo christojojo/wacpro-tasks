@@ -109,6 +109,7 @@ const boxShadow = {
     "0px 1px 0px 0px rgba(0, 0, 0, 0.09), 3px 0px 0px 0px #0C66E4 inset;",
   wrapper:
     "0px 0px 1px 0px rgba(0, 0, 0, 0.16), 0px 1px 2px 0px rgba(0, 0, 0, 0.12);",
+  cardShadow: "0px 0px 1px 0px #00000029,0px 1px 2px 0px #0000001F"
 };
 const dropShadow = {
   popup: ["0 1px 2px rgba(0, 0, 0, 0.02)", "0 12px 8px rgba(0, 0, 0, 0.08)"],
@@ -117,7 +118,7 @@ const dropShadow = {
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  mode: "jit",
+  mode: "jit", 
   theme: {
     extend: {
       padding: spacing,
@@ -144,6 +145,10 @@ module.exports = {
 
       height: {
         dynamic: "var(--dynamic-val)",
+      },
+      screens: {
+        '2xl': '1439px',
+        '3xl': '1800px',
       },
     },
   },

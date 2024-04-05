@@ -14,7 +14,7 @@ function LineBarGraph() {
 
   return (
 
-    <div className='pt-24'>      
+    <div className=''>      
       <ul className='navbargraph flex space-x-[3px] *:h-[10px] '>
       {detailes.map((item,index)=>{
         // console.log(item.WorkingHours);

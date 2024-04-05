@@ -20,12 +20,13 @@ import LineBarGraphPage from './pages/LineBarGraphPage';
 import ChartPage from './pages/ChartPage';
 import LinechartPage from './pages/LinechartPage';
 import StackBarChart from './components/StackBarChart/StackBarChart';
+import CardsPage from './pages/CardsPage';
 
 function App() {
 
   return (
   <BrowserRouter>
-  <div className='flex gap-[30px]'>
+  <div className='flex gap-[30px] '>
   <AsideRoute/>
     <Routes>
       <Route path='/'         element={<HomePage/>}     />
@@ -46,6 +47,8 @@ function App() {
       <Route path='/simplebarchart' element={<ChartPage/>}/>
       <Route path='/linechart' element={<LinechartPage/>}/>
       <Route path='/stackbarchart' element={<StackBarChart/>}/>
+      <Route path='/cards' element={<CardsPage/>}/>
+
     </Routes>
     </div>
     </BrowserRouter> 

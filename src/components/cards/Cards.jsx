@@ -89,7 +89,7 @@ function Cards() {
                        <h3 className='3xl:text-[28px] 2xl:text-[20px] font-semibold 3xl:leading-[33.89px] 2xl:leading-[23.89px] pb-[2px]'>300 hr</h3>
                        <span className='text-[12px] font-medium leading-[14.52px] text-[#727272]'>$6.66/hr <span className='text-[#A33C02] text-[12px] font-medium leading-[14.52px]'>-36%</span></span>
                     </div>
-                    <div className="absolute 3xl:right-[10%] 2xl:right-[8%] 2xl:bottom-[38%] 3xl:bottom-[12%]">
+                    <div className="absolute 3xl:right-[21%] 2xl:right-[8%] 2xl:bottom-[38%] 3xl:bottom-[12%]">
                         <button className="2xl:max-w-[18px] 3xl:max-w-full">
                         <img src={Assets.plusBtn} alt="" />
                         </button>
@@ -119,8 +119,7 @@ function Cards() {
                         <img src={Assets.pie} alt="" />
                     </figure>
                     </div>
-                    <div className="
-                    ">
+                    <div className="">
                        <div className='3xl:text-[14px] 2xl:text-[12px] whitespace-nowrap font-medium leading-[16.94px] text-[#111111] pb-2'>Actual Estimated</div>
                        <h3 className='3xl:text-[28px] 2xl:text-[20px] font-semibold 3xl:leading-[33.89px] 2xl:leading-[23.89px] pb-[2px]'>300 hr</h3>
                        <span className='text-[12px] font-medium leading-[14.52px] text-[#727272]'>$6.66/hr <span className='text-[#A33C02] text-[12px] font-medium leading-[14.52px]'>-36%</span></span>
@@ -162,7 +161,7 @@ function Cards() {
             <div className="3xl:text-[14px] 2xl:text-[12px] font-medium leading-[16.94px] pb-2">
               Project Completion
             </div>
-            <h2 className="3xl:text-[28px] 2xl:text-[20px] font-semibold leading-[33.89px] 3xl:pb-[28px] 2xl:pb-[25px]">
+            <h2 className="3xl:text-[28px] 2xl:text-[20px] font-semibold leading-[33.89px] 3xl:pb-[33px] 2xl:pb-[19px]">
               85%
             </h2>
             <p className="text-[14px] font-normal leading-[16.94px] pt-[9px] border-t border-t-[#ECECEC]">
@@ -174,7 +173,7 @@ function Cards() {
           </div>
         </div>
         <div className="flex 3xl:gap-4 2xl:gap-3 ">
-          <div className="shadow-cardShadow 3xl:py-[23px] 2xl:py-[18px] 3xl:px-[24px] 2xl:px-4 rounded-[6px] max-w-[192px] w-full ">
+          <div className="shadow-cardShadow 3xl:py-[21px] 2xl:py-[18px] 3xl:px-[24px] 2xl:px-4 rounded-[6px] max-w-[192px] w-full ">
             <p className="3xl:text-[14px] 2xl:text-[12px] font-medium leading-[16.94px] 3xl:pb-[10px] 2xl:pb-2">
               Days left of (109)
             </p>
@@ -197,9 +196,9 @@ function Cards() {
               as of Jan 12
             </p>
           </div>
-          <div className="w-full shadow-cardShadow 2xl:max-w-[582px] rounded-[6px]">
+          <div className="w-full shadow-cardShadow 3xl:max-w-[582px] rounded-[6px]">
             <div className="flex 3xl:gap-4 2xl:gap-3 w-full  3xl:pt-4 2xl:pt-3 3xl:px-6 2xl:px-4">
-              <div className="p-2 shadow-cardShadow rounded-[6px] max-w-[167px] w-full">
+              <div className="p-2 shadow-cardShadow rounded-[6px] 3xl:max-w-[167px] w-full">
                 <h2 className="3xl:text-[28px] 2xl:text-[20px] font-semibold 3xl:leading-[33.89px] 2xl:leading-[23.89px] pb-1">
                   5
                 </h2>
@@ -207,7 +206,7 @@ function Cards() {
                   Departments
                 </p>
               </div>
-              <div className="p-2 shadow-cardShadow rounded-[6px] max-w-[167px] w-full">
+              <div className="p-2 shadow-cardShadow rounded-[6px] 3xl:max-w-[167px] w-full">
               <h2 className="3xl:text-[28px] 2xl:text-[20px] font-semibold 3xl:leading-[33.89px] 2xl:leading-[23.89px] pb-1">
                   12
                 </h2>
@@ -215,7 +214,7 @@ function Cards() {
                   Resources
                 </p>
               </div>
-              <div className="p-2 shadow-cardShadow rounded-[6px] max-w-[167px] w-full">
+              <div className="p-2 shadow-cardShadow rounded-[6px] 3xl:max-w-[167px] w-full">
               <h2 className="3xl:text-[28px] 2xl:text-[20px] font-semibold 3xl:leading-[33.89px] 2xl:leading-[23.89px] pb-1">
                   4.2
                 </h2>

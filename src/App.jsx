@@ -21,6 +21,8 @@ import ChartPage from './pages/ChartPage';
 import LinechartPage from './pages/LinechartPage';
 import StackBarChart from './components/StackBarChart/StackBarChart';
 import CardsPage from './pages/CardsPage';
+import BarFeedBackPage from './pages/BarFeedBackPage';
+
 
 function App() {
 
@@ -48,6 +50,8 @@ function App() {
       <Route path='/linechart' element={<LinechartPage/>}/>
       <Route path='/stackbarchart' element={<StackBarChart/>}/>
       <Route path='/cards' element={<CardsPage/>}/>
+      <Route path='/FeedBackGraph' element={<BarFeedBackPage/>}/>
+
 
     </Routes>
     </div>

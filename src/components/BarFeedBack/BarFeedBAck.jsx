@@ -2,8 +2,8 @@ import React from "react";
 
 function BarFeedBAck({ icon }) {
   const satisfaction = [
-    { id: 1, name: "recharge", color: "#C4314B" },
-    { id: 2, name: "maintain", level: "bad", color: "#FFC13C" },
+    { id: 1, name: "recharge",level: 'good', color: "#C4314B" },
+    { id: 2, name: "maintain", color: "#FFC13C" },
     { id: 3, name: "thrive", color: "#49AB0A" },
   ];
 
@@ -25,8 +25,10 @@ function BarFeedBAck({ icon }) {
           );
         })}
       </ul>
+
     </div>
   );
 }
 
 export default BarFeedBAck;
+  

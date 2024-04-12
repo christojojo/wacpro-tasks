@@ -1,0 +1,10 @@
+.not-approved-hrs{
+    background: repeating-linear-gradient(
+  315deg,
+
+  #FFD1D1,
+  #FFD1D1 3px,
+  #EA9354 3px,
+  #EA9354 5px
+);
+}

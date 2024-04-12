@@ -72,6 +72,9 @@ const isActive = (path) => {
                     <li className={isActive('/Avatar') ? "text-primary" : '' }>
                         <Link to='/Avatar'>Avatar</Link>
                     </li>
+                    <li className={isActive('/Timeline') ? "text-primary" : '' }>
+                        <Link to='/Timeline'>Timeline</Link>
+                    </li>
                     {/* <li className={isActive('/clickme') ? "text-primary" : '' }>
                         <Link to='/clickme'>Click Me</Link>
                     </li>  */}

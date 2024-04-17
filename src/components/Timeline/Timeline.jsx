@@ -97,24 +97,24 @@ function Timeline() {
                 </span>
               </div>
             </div>
-            <div className="flex [&>*:first-child]:rounded-s [&>*:last-child]:rounded-e" >
+            <div className="flex [&>*:first-child]:rounded-s [&>*:last-child]:rounded-e relative" >
               {data.ApprovedHours && (
-                <div className="appoved-hr relative group bg-[#A5DFAB] text-[#096E13] text-[11px] font-medium leading-[20px] py-1 pl-[6px] h-[28px]" style={{ width: extratime }}>
-                  <span className="absolute top-1/2 -translate-y-1/2 left-0 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300">
+                <div className="appoved-hr  group bg-[#A5DFAB] text-[#096E13] text-[11px] font-medium leading-[20px] py-1 pl-[6px] h-[28px]" style={{ width: extratime }}>
+                  <span className="absolute top-1/2 -translate-y-1/2 left-[100%] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300">
                     +{data.ApprovedHours}
                   </span>
                 </div>
               )}
               {data.NotApprovedHours && (
-                <div className="not-approved-hrs group relative  bg-[#EA9354] text-[#760000] text-[11px] font-medium leading-[20px] py-1 pl-[6px] h-[28px]" style={{ width: overtime }}>
-                  <span className="absolute top-1/2  -translate-y-1/2 left-[100%] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 bg-[#F6F6F6] rounded px-[2px]">
+                <div className="not-approved-hrs group   bg-[#EA9354] text-[#760000] text-[11px] font-medium leading-[20px] py-1 pl-[6px] h-[28px]" style={{ width: overtime }}>
+                  <span className="absolute top-1/2  -translate-y-1/2 left-[100%] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300  rounded px-[2px]">
                     +{data.NotApprovedHours}
                   </span>
                 </div>
               )}
               {data.exceed && (
-                <div className="bg-[#D6D6D6] relative group text-[#515151] text-[11px] font-medium leading-[20px] py-1 pl-[6px] rounded" style={{ width: exceedTime }}>
-                  <span className="absolute top-1/2 -translate-y-1/2 left-2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300">
+                <div className="bg-[#D6D6D6]  group text-[#515151] text-[11px] font-medium leading-[20px] py-1 pl-[6px] rounded" style={{ width: exceedTime }}>
+                  <span className="absolute top-1/2 -translate-y-1/2 left-[100%] whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300">
                     +{data.exceed}
                   </span>
                 </div>

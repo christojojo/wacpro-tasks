@@ -1,3 +1,4 @@
+
 .not-approved-hrs{
     background: repeating-linear-gradient(
   315deg,
@@ -8,3 +9,6 @@
   #EA9354 5px
 );
 }
+
+.shadow{
+  text-shadow: 0 0px 10px #ffffff;}

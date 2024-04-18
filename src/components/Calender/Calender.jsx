@@ -18,9 +18,10 @@ function Calender() {
     weekends={true}
     events={[
       { title: 'Anniversery', date: '2024-04-01' },
-      { title: 'Meeting', date: '2024-04-01' },
-      { title: 'Deployment Date', date: '2024-04-16' }, 
-      { title: 'Meeting', start: new Date() }
+      { title: 'Holiday', date: '2024-04-04',color: '#FA9600' },
+      { title: 'Deployment Date', date: '2024-04-10' }, 
+      { title: 'Meeting', start: new Date(), color: '#0c66e4' },
+      { title: 'Sick Leave', start: '2024-04-22' ,end : '2024-04-25' , color: '#89170F'}
   ]}  
   />
   )

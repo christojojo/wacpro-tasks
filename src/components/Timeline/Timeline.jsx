@@ -107,11 +107,11 @@ function Timeline() {
                   <span className={`absolute top-1/2 -translate-y-1/2 ${extratime > 30 ? 'left-1 ':'left-full'} whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 pointer-events-none`}>
                     +{data.ApprovedHours}
                   </span>
-                </div>
+                </div> 
               )}
               {data.NotApprovedHours && (
                 <div className={`not-approved-hrs ${overtime > 35 ? 'relative' : ''} group bg-[#EA9354] text-[#760000]  text-[11px] font-medium leading-[20px] h-[28px]`} style={{ width: overtime }}>
-                  <span className={`absolute top-1/2  -translate-y-1/2 ${overtime > 35 ? 'left-1 bg-[#F6F6F6]':'left-full'} whitespace-nowrap   opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300  rounded px-[2px] pointer-events-none`}>
+                  <span className={`absolute top-1/2  -translate-y-1/2 ${overtime > 35 ? 'left-1 bg-[#ffffffe3]':'left-full'} whitespace-nowrap   opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300  rounded px-[2px] pointer-events-none`}>
                     +{data.NotApprovedHours}
                   </span>
                 </div>

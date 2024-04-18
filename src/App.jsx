@@ -24,6 +24,7 @@ import CardsPage from './pages/CardsPage';
 import BarFeedBackPage from './pages/BarFeedBackPage';
 import AvatarPage from './pages/AvatarPage';
 import TimelinePage from './pages/TimelinePage';
+import CalenderPage from './pages/CalenderPage';
 
 
 function App() {
@@ -54,7 +55,8 @@ function App() {
       <Route path='/cards' element={<CardsPage/>}/>
       <Route path='/FeedBackGraph' element={<BarFeedBackPage/>}/>
       <Route path='/Avatar' element={<AvatarPage/>}/>
-      <Route path='Timeline' element={<TimelinePage/>}/>
+      <Route path='/Timeline' element={<TimelinePage/>}/>
+      <Route path='/Calender' element={<CalenderPage/>}/>
 
 
     </Routes>

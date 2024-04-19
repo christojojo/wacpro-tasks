@@ -19,6 +19,19 @@
     font-weight: 500;
     line-height: 19.6px;
 }
+.fc .fc-toolbar.fc-header-toolbar{
+  padding: 0 16px;
+}
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #0C66E4;
+  color: #ffffff;
+}
 
 
 :root {
@@ -52,8 +65,7 @@
   --fc-bg-event-color: rgb(143, 223, 130);
   --fc-bg-event-opacity: 0.3;
   --fc-highlight-color: rgba(188, 232, 241, 0.3);
-  --fc-today-bg-color: rgba(255, 220, 40, 0.15);
+  --fc-today-bg-color: #fff;
   --fc-now-indicator-color: red;
 
-  --fc-today-bg-color: #e4f78f;
 }

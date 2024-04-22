@@ -86,7 +86,7 @@ function CalenderAside() {
             </div>
             <ul
               className={`flex gap-5 py-3 px-4 pt-0 transition-all  ${
-                openSections[index] ? "opacity-100 " : "opacity-0"
+                openSections[index] ? "opacity-100 " : "opacity-0 pointer-events-none"
               }`}>
               {section.data.map((item, ind) => (
                 <li key={ind} className="flex gap-2">

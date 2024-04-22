@@ -37,6 +37,11 @@
 }
 
 
+.fc-day-sat .fc-daygrid-day-frame, .fc-day-sun .fc-daygrid-day-frame {
+  background-color: #f0f0f0;
+}
+
+
 :root {
   --fc-small-font-size: 12px;
   --fc-page-bg-color: #fff;

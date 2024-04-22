@@ -8,7 +8,7 @@ function CalenderPage() {
       <div className='flex flex-grow'>
       <Calender></Calender>
       </div>
-      <div className='max-w-[420px] w-full'>
+      <div className='max-w-[350px] xl:max-w-[420px]  w-full'>
       <CalenderAside/>
       </div>
     </div>

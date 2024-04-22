@@ -20,7 +20,10 @@
     line-height: 19.6px;
 }
 .fc .fc-toolbar.fc-header-toolbar{
-  padding: 0 16px;
+  padding: 15px 16px;
+  margin: 0;
+  border: 1px solid #e5e7eb;
+  border-bottom: 0;
 }
 .fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number{
   display: flex;

@@ -53,6 +53,7 @@ function Timeline() {
   const [totalhourswidth, setTotalhourswidth] = useState(null);
   const [widthApproved, setWidthApproved] = useState(null);
   const [widthNotApproved, setWidthNotApproved] = useState(null);
+
   const totalhoursRef = useRef(null);
 
   useEffect(() => {
@@ -60,8 +61,8 @@ function Timeline() {
     if (totalhours) {
       const totalhourswidth = totalhours.getBoundingClientRect().width;
       setTotalhourswidth(totalhourswidth);
-      setWidthApproved((Timeline.ApprovedHours / Timeline.TotalHours) * totalhourswidth);
-      setWidthNotApproved((Timeline.NotApprovedHours / Timeline.TotalHours) * totalhourswidth);
+      setWidthApproved((totalhourswidth * (( Timeline.ApprovedHours / Timeline.TotalHours ) *100)) /100)
+      setWidthNotApproved((totalhourswidth * ((Timeline.NotApprovedHours /Timeline.TotalHours) *100)) /100);
     }
   }, []);
 
@@ -92,6 +93,7 @@ function Timeline() {
         const overtime = (deptHour * ((data.NotApprovedHours / data.TotalHours) * 100)) / 100;
         const extratime = (deptHour * ((data.ApprovedHours / data.TotalHours) * 100)) / 100;
         const exceedTime = (deptHour * ((data.exceed / data.TotalHours) * 100)) / 100;
+        console.log(totalhourswidth);
         return (
           <div key={index} className="flex gap-1 pb-4">
             <div className="bg-[#F6F6F6] group h-[28px]" style={{ width: deptHour }}>

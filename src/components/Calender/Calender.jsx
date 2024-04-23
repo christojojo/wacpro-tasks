@@ -5,21 +5,25 @@ import interactionPlugin from "@fullcalendar/interaction"; // needed for dayClic
 import "./calenderstyle.css";
 
 function Calender() {
+
   const [initialView, setInitialView] = useState("dayGridMonth");
+  const [currentMonth, setCurrentMonth] = useState("");
 
   const calendarRef = useRef(null);
 
-  const [currentMonth, setCurrentMonth] = useState("");
   const updateCurrentMonth = () => {
     if (calendarRef.current) {
       const calendarApi = calendarRef.current.getApi();
       const currentDate = calendarApi.getDate(); // Get the current date
+      // console.log(currentDate);
       const monthName = currentDate.toLocaleString("default", {
-        month: "long",
+        month: "long",        
       });
+      // console.log(monthName);
       setCurrentMonth(monthName); // Update state with the current month name
     }
   };
+
   // Function to handle the custom "Next" button
   const handleNextButtonClick = () => {
     if (calendarRef.current) {
@@ -44,26 +48,27 @@ function Calender() {
     updateCurrentMonth(); // Update the current month
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setInitialView("timeGridWeek");
-      } else {
-        setInitialView("dayGridMonth");
-      }
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if (window.innerWidth < 768) {
+  //       setInitialView("timeGridWeek");
+  //     } else {
+  //       setInitialView("dayGridMonth");
+  //     }
+  //   };
 
-    handleResize();
-    window.addEventListener("resize", handleResize);
+  //   handleResize();
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
-  const handleDateClick = (arg) => {
-    // alert(arg.dateStr)
-  };
+  // display an alert box and display the date while clicking the date
+  // const handleDateClick = (arg) => {
+  //   alert(arg.dateStr)
+  // };
 
   const handleEventDrop = (dropInfo) => {
     const updatedEvents = events.map((event) =>
@@ -72,18 +77,6 @@ function Calender() {
         : event
     );
     setEvents(updatedEvents); // Update the state with the new event dates
-  };
-  const switchToListView = () => {
-    if (calendarRef.current) {
-      const calendarApi = calendarRef.current.getApi();
-      calendarApi.changeView("listWeek"); // Switch to the "listWeek" view
-    }
-  };
-  const switchToGridView = () => {
-    if (calendarRef.current) {
-      const calendarApi = calendarRef.current.getApi();
-      calendarApi.changeView("dayGridMonth"); // Switch to the "dayGridMonth" view
-    }
   };
 
   return (
@@ -146,10 +139,11 @@ function Calender() {
         selectable="true" // Allow users to select dates
         editable="true"
         initialView="dayGridMonth" // initial view
-        dateClick={handleDateClick}
         weekends={true} //show weekends in the calender
         eventDrop={handleEventDrop} // Handle event drop
         headerToolbar={false}
+        datesSet={handleDatesSet}
+        firstDay={1}  // Set first day
         titleFormat={
           { year: "numeric", month: "long" } //title format for calender
         }
@@ -168,9 +162,7 @@ function Calender() {
             color: "#89170F",
           },
         ]}
-        firstDay={1}
-        datesSet={handleDatesSet}
-        
+        // dateClick={handleDateClick}
         // hiddenDays: [ 2, 4 ]        hide the week days if required
       />
     </div>

@@ -35,11 +35,15 @@
   background: #0C66E4;
   color: #ffffff;
 }
-
-
 .fc-day-sat .fc-daygrid-day-frame, .fc-day-sun .fc-daygrid-day-frame {
   background-color: #f0f0f0;
 }
+.fc-day-sat .fc-daygrid-day-number,.fc-day-sun .fc-daygrid-day-number {
+  color: #A7A7A7; /* Change the text color for Saturday */
+}
+/* .fc.fc-media-screen.fc-direction-ltr.fc-theme-standard{
+  display: none;
+} */
 
 
 :root {

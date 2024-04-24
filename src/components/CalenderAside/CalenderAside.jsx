@@ -63,7 +63,7 @@ function CalenderAside() {
   ];
 
   return (
-    <div className=" w-full border h-dvh border-l-0">
+    <div className=" w-full border h-full border-l-0">
       <div className="p-3 h-full wrap">
         {LeaveSections.map((section, index) => (
           <div

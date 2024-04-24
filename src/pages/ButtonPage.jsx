@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../components/Button'
+import Assets from '../Common/Asset'
 
 function ButtonPage() {
   return (
@@ -20,6 +21,8 @@ function ButtonPage() {
       <Button variant='secondary' >Text</Button>
       <Button variant='secondary'  iconR={<img className='h-[18px] w-[18px]' src='../src/assets/icon-dark.svg' />}>Text</Button>
       <Button variant='secondary' loading='true' iconR={<img className='h-[18px] w-[18px]' src='../src/assets/icon-dark.svg' />}>Text</Button>
+
+      <Button variant='primary '>Text</Button>
 
     </div>
     </div>

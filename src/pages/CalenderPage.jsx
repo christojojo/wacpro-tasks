@@ -4,7 +4,7 @@ import CalenderAside from '../components/CalenderAside/CalenderAside'
 
 function CalenderPage() {
   return (
-    <div className='flex w-full pt-[135px]'>
+    <div className='flex w-full pt-[60px]'>
       <div className='flex flex-grow'>
       <Calender></Calender>
       </div>

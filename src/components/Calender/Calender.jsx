@@ -6,7 +6,7 @@ import "./calenderstyle.css";
 import Button from "../Button";
 
 function Calender() {
-  const [initialView, setInitialView] = useState("dayGridMonth");
+  
   const [currentMonth, setCurrentMonth] = useState("");
 
   const calendarRef = useRef(null);
@@ -62,9 +62,15 @@ function Calender() {
     setEvents(updatedEvents); // Update the state with the new event dates
   };
 
-  const [isListView, setIsListview] = useState(false);
-  const toggleView = () => {
-    setIsListview(!isListView);
+// view type list type and gridtype
+  const [view, setView] = useState('grid'); // Default to grid view
+
+  const showListView = () => {
+    setView('list');
+  };
+
+  const showGridView = () => {
+    setView('grid');
   };
 
   const [datesAndWeekdays, setDatesAndWeekdays] = useState([]);
@@ -141,15 +147,14 @@ function Calender() {
             <Button
               variant="secondary"
               classNames={`listType !p-[5px] rounded-s-md rounded-r-none border-r-0 !h-[36px]`}
-              // onClick={handleClickList}
-              onClick={toggleView}
+              onClick={showListView}
             >
               <span className="material-symbols-outlined">list</span>
             </Button>
             <Button
               variant="secondary"
               classNames={"!p-[5px] rounded-r-md rounded-l-none !h-[36px]"}
-              // onClick={handleClickGrid}
+              onClick={showGridView}
             >
               <span className="material-symbols-outlined">grid_view</span>
             </Button>
@@ -163,7 +168,7 @@ function Calender() {
         </div>
       </div>
 
-      {isListView ? (
+      {view === 'list' ? (
         <div className="list-type border border-b-0 ">
           {datesAndWeekdays.map((item, index) => (
             <div key={index} className="flex h-[40px] divide-x border-b">
@@ -217,6 +222,8 @@ function Calender() {
           />
         </div>
       )}
+
+
     </div>
   );
 }

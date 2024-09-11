@@ -101,7 +101,6 @@ td a {
   --font-lg: #{size(18)};
   --font-xl: #{size(30)};
   /* colors */
-  --zenbor-parent: #d1d7db;
   --zenbor-child: #e2e6e9;
   --zenbor-main: #d9dcde;
   --bg-white: #ffffff;
@@ -142,6 +141,12 @@ td a {
   --aside-bg: #fafbfc;
   --aside-border: #f4f5f7;
   --Modal-Fade: #000000a9;
+
+  --primary-color: #0c66e4;
+  --zenbor-parent: #d1d7db;
+  
+
+
 
   /* // --default-border : #ECECEC; */
 }

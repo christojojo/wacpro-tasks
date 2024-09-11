@@ -25,6 +25,12 @@ import BarFeedBackPage from './pages/BarFeedBackPage';
 import AvatarPage from './pages/AvatarPage';
 import TimelinePage from './pages/TimelinePage';
 import CalenderPage from './pages/CalenderPage';
+import HeaderTab from './pages/HeaderTab';
+import { Tooltip } from 'chart.js';
+import TooltipPage from './pages/TooltipPage';
+import DateRangePickerPage from './pages/DateRangePickerPage';
+import DatePicker from './pages/DatePickerPage';
+import DatePickerPage from './pages/DatePickerPage';
 
 
 function App() {
@@ -57,6 +63,11 @@ function App() {
       <Route path='/Avatar' element={<AvatarPage/>}/>
       <Route path='/Timeline' element={<TimelinePage/>}/>
       <Route path='/Calender' element={<CalenderPage/>}/>
+      <Route path='/HeaderTab' element={<HeaderTab/>}/>
+      <Route path='/Tooltip' element={<TooltipPage/>}/>
+      <Route path='/DateRangePicker' element={<DateRangePickerPage/>}/>
+      <Route path='/DatePicker' element={<DatePickerPage/>}/>
+
 
 
     </Routes>

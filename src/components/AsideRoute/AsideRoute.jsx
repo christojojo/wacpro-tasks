@@ -90,17 +90,39 @@ function AsideRoute({}) {
                         <Link to='/table'>Table</Link>
                     </li>    */}
           <li className={isActive("/DateRangePicker") ? "text-primary" : ""}>
-            <Link
-              to="/DateRangePicker">
-              DateRangePicker
-            </Link>
+            <Link to="/DateRangePicker">DateRangePicker</Link>
           </li>
           <li className={isActive("/DatePicker") ? "text-primary" : ""}>
-            <Link
-              to="/DatePicker">
-              DatePicker
-            </Link>
+            <Link to="/DatePicker">DatePicker</Link>
           </li>
+          <li className={isActive("/Example1") ? "text-primary" : ""}>
+            <Link to="/Example1">Animation 1</Link>
+          </li>
+          <li className={isActive("/Animation2") ? "text-primary" : ""}>
+            <Link to="/Animation2">Animation 2</Link>
+          </li>
+          <li
+            className={
+              isActive("/FramermotionSiteExample") ? "text-primary" : ""
+            }
+          >
+            <Link to="/FramermotionSiteExample">FramermotionSiteExample</Link>
+          </li>
+          <li className={isActive("/Offcanvas") ? "text-primary" : ""}>
+            <Link to="/Offcanvas">Offcanvas</Link>
+          </li>
+          <li className={isActive("/DataFetcher") ? "text-primary" : ""}>
+            <Link to="/DataFetcher">DataFetcher</Link>
+          </li>
+          <li className={isActive("/Crud") ? "text-primary" : ""}>
+            <Link to="/Crud">Crud function</Link>
+          </li>
+           <li className={isActive("/Crud") ? "text-primary" : ""}>
+            <Link to="/kanban">kanban</Link>
+          </li>  
+          <li className={isActive("/DraggableList") ? "text-primary" : ""}>
+            <Link to="/DraggableList">DraggableList</Link>
+          </li>          
         </ul>
       </aside>
       <script></script>

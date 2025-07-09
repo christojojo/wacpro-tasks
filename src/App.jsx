@@ -31,13 +31,20 @@ import TooltipPage from './pages/TooltipPage';
 import DateRangePickerPage from './pages/DateRangePickerPage';
 import DatePicker from './pages/DatePickerPage';
 import DatePickerPage from './pages/DatePickerPage';
-
+import Example1 from './components/FramerMotion/Example1';
+import Animation2 from './components/Animation/Animation2';
+import FramermotionSiteExample from './pages/FramermotionSiteExample';
+import Offcanvas from './pages/Offcanvas';
+import DataFetcher from './pages/DataFetcher';
+import Crud from './pages/Crud';
+import Kanban from './pages/Kanban';
+import DraggableList from './pages/DraggableList';
 
 function App() {
 
   return (
   <BrowserRouter>
-  <div className='flex gap-[30px] '>
+  <div className='flex gap-[30px] bg-gray'>
   <AsideRoute/>
     <Routes>
       <Route path='/'         element={<HomePage/>}     />
@@ -67,8 +74,14 @@ function App() {
       <Route path='/Tooltip' element={<TooltipPage/>}/>
       <Route path='/DateRangePicker' element={<DateRangePickerPage/>}/>
       <Route path='/DatePicker' element={<DatePickerPage/>}/>
-
-
+      <Route path='/Example1' element={<Example1/>}/>
+      <Route path='/Animation2' element={<Animation2/>}/>
+      <Route path='/FramermotionSiteExample' element={<FramermotionSiteExample/>}/>
+      <Route path='/Offcanvas' element={<Offcanvas/>}/>
+      <Route path='/DataFetcher' element={<DataFetcher/>}/>
+      <Route path='/Crud' element={<Crud/>}/>
+      <Route path='/kanban' element={<Kanban/>}/>
+      <Route path='/DraggableList' element={<DraggableList/>}/>
 
     </Routes>
     </div>

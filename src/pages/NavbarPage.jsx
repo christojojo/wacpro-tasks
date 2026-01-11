@@ -96,7 +96,7 @@ function NavbarPage() {
                   </div>
                 )
             })}
-          
+
           </div>
     </div>
   );

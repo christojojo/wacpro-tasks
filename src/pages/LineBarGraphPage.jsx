@@ -3,7 +3,7 @@ import LineBarGraph from '../components/LineBarGraph/LineBarGraph'
 
 function LineBarGraphPage() {
   return (
-    <div>
+    <div className='pt-20'>
     <LineBarGraph></LineBarGraph>
     </div>
   )

@@ -37,7 +37,7 @@ const Button = ({
         </span>
       ) : null}
       {children && (
-        <span className={`whitespace-nowrap leading-none ${loading ? "invisible" : ""}`}>
+        <span className={`flex items-center justify-center whitespace-nowrap leading-none ${loading ? "invisible" : ""}`}>
           {children}
         </span>
       )}

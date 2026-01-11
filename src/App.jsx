@@ -20,12 +20,31 @@ import LineBarGraphPage from './pages/LineBarGraphPage';
 import ChartPage from './pages/ChartPage';
 import LinechartPage from './pages/LinechartPage';
 import StackBarChart from './components/StackBarChart/StackBarChart';
+import CardsPage from './pages/CardsPage';
+import BarFeedBackPage from './pages/BarFeedBackPage';
+import AvatarPage from './pages/AvatarPage';
+import TimelinePage from './pages/TimelinePage';
+import CalenderPage from './pages/CalenderPage';
+import HeaderTab from './pages/HeaderTab';
+import { Tooltip } from 'chart.js';
+import TooltipPage from './pages/TooltipPage';
+import DateRangePickerPage from './pages/DateRangePickerPage';
+import DatePicker from './pages/DatePickerPage';
+import DatePickerPage from './pages/DatePickerPage';
+import Example1 from './components/FramerMotion/Example1';
+import Animation2 from './components/Animation/Animation2';
+import FramermotionSiteExample from './pages/FramermotionSiteExample';
+import Offcanvas from './pages/Offcanvas';
+import DataFetcher from './pages/DataFetcher';
+import Crud from './pages/Crud';
+import Kanban from './pages/Kanban';
+import DraggableList from './pages/DraggableList';
 
 function App() {
 
   return (
   <BrowserRouter>
-  <div className='flex gap-[30px]'>
+  <div className='flex gap-[30px] bg-gray'>
   <AsideRoute/>
     <Routes>
       <Route path='/'         element={<HomePage/>}     />
@@ -46,6 +65,24 @@ function App() {
       <Route path='/simplebarchart' element={<ChartPage/>}/>
       <Route path='/linechart' element={<LinechartPage/>}/>
       <Route path='/stackbarchart' element={<StackBarChart/>}/>
+      <Route path='/cards' element={<CardsPage/>}/>
+      <Route path='/FeedBackGraph' element={<BarFeedBackPage/>}/>
+      <Route path='/Avatar' element={<AvatarPage/>}/>
+      <Route path='/Timeline' element={<TimelinePage/>}/>
+      <Route path='/Calender' element={<CalenderPage/>}/>
+      <Route path='/HeaderTab' element={<HeaderTab/>}/>
+      <Route path='/Tooltip' element={<TooltipPage/>}/>
+      <Route path='/DateRangePicker' element={<DateRangePickerPage/>}/>
+      <Route path='/DatePicker' element={<DatePickerPage/>}/>
+      <Route path='/Example1' element={<Example1/>}/>
+      <Route path='/Animation2' element={<Animation2/>}/>
+      <Route path='/FramermotionSiteExample' element={<FramermotionSiteExample/>}/>
+      <Route path='/Offcanvas' element={<Offcanvas/>}/>
+      <Route path='/DataFetcher' element={<DataFetcher/>}/>
+      <Route path='/Crud' element={<Crud/>}/>
+      <Route path='/kanban' element={<Kanban/>}/>
+      <Route path='/DraggableList' element={<DraggableList/>}/>
+
     </Routes>
     </div>
     </BrowserRouter> 

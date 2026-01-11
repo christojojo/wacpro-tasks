@@ -1,0 +1,70 @@
+:root {
+  --rs-bg-active: var(--primary-color);
+  --rs-input-focus-border: var(--zenbor-parent);
+  --rs-color-focus-ring: none;
+  --rs-border-primary: var(--zenbor-parent);
+  --rs-calendar-date-selected-text: var(--bg-white);
+  // --rs-close-button-hover-color: var(--primary-color);
+  // --rs-picker-state-error: var(--zenbor-parent)
+}
+:global {
+  .datepicker-popup {
+    margin-top: 8px;
+    .rs-input {
+      font-family: "Inter", sans-serif !important;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+    button.rs-btn.rs-btn-primary.rs-btn-sm {
+      background-color: var(--primary-color);
+    }
+    .rs-picker-toolbar .rs-stack-item .rs-btn-link {
+      color: var(--border-black);
+      border: 1px solid var(--border-button);
+      height: 100% !important;
+      padding: 8px 10px !important;
+      text-decoration: none;
+      font-size: 12px !important;
+    }
+    .rs-input-group.rs-input-group-inside {
+      height: 34px;
+    }
+    .rs-picker-daterange-header,
+    .rs-calendar-header-title {
+      font-size: 12px !important;
+      font-weight: 500;
+      line-height: 16px;
+    }
+    .rs-calendar-header-title {
+      font-weight: 600 !important;
+      color: var(--border-black) !important;
+    }
+    .rs-calendar-table-cell-content {
+      width: 34px !important;
+      height: 32px !important;
+      padding: 0 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border-radius: 4 !important;
+      font-size: 12px;
+
+      &:hover {
+        background-color: #e9f2ff !important;
+      }
+    }
+    .rs-picker-toolbar.rs-stack {
+      align-items: end !important;
+    }
+    .rs-picker-toolbar-ranges {
+      max-width: 200px !important;
+      width: 100% !important;
+    }
+    .rs-calendar-table-cell-selected {
+      .rs-calendar-table-cell-content:hover {
+        background-color: var(--primary-color) !important;
+      }
+    }
+  }
+}
